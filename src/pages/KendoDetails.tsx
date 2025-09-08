@@ -205,7 +205,7 @@ const KendoDetails = () => {
                     <img 
                       src="/lovable-uploads/e4113638-9cef-487f-ae49-46982d467b14.png" 
                       alt="Wiesław Biel"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-[center_33%]"
                     />
                   </div>
                   <h4 className="font-zen font-medium text-accent mb-2">Wiesław Biel</h4>
@@ -223,7 +223,6 @@ const KendoDetails = () => {
                   </div>
                   <h4 className="font-zen font-medium text-accent mb-2">Natalia Maj</h4>
                   <p className="text-muted-foreground">5 dan Kendo</p>
-                  <p className="text-sm text-muted-foreground mt-1">Asystent, Szef Komisji ds. Marketingu PZK</p>
                 </div>
 
                 <div className="text-center">
