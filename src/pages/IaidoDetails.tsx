@@ -71,7 +71,7 @@ const IaidoDetails = () => {
                 <ol className="list-decimal list-inside space-y-2 text-foreground">
                   <li>Dobre chęci</li>
                   <li>Ubranie sportowe (spodnie dresowe, koszulka)</li>
-                  <li><Link to="/about-us#declaration-section" className="text-crimson hover:underline">Wypełniona deklaracja</Link>* (wymagane od drugiego treningu)</li>
+                  <li><Link to="/o-nas#declaration-section" className="text-crimson hover:underline">Wypełniona deklaracja</Link>* (wymagane od drugiego treningu)</li>
                   <li>Wymagane opłaty* (pierwszy trening jest za darmo)</li>
                 </ol>
                 <p className="text-sm text-muted-foreground mt-3">* - wymagane od drugiego treningu</p>
@@ -104,7 +104,7 @@ const IaidoDetails = () => {
                 
                 <div>
                   <h4 className="font-zen font-medium text-accent mb-2">2. Jakie dokumenty są potrzebne?</h4>
-                  <p className="text-foreground">Na pierwszy trening potrzebujesz jedynie zgody rodzica/opiekuna (w przypadku osób niepełnoletnich). <Link to="/about-us#declaration-section" className="text-crimson hover:underline">Deklarację członkowską</Link> możesz dostarczyć w ciągu kilku kolejnych tygodni.</p>
+                  <p className="text-foreground">Na pierwszy trening potrzebujesz jedynie zgody rodzica/opiekuna (w przypadku osób niepełnoletnich). <Link to="/o-nas#declaration-section" className="text-crimson hover:underline">Deklarację członkowską</Link> możesz dostarczyć w ciągu kilku kolejnych tygodni.</p>
                 </div>
                 
                 <div>
