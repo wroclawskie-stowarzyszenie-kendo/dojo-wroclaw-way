@@ -162,10 +162,23 @@ const Schedule = () => {
                       <div className="text-muted-foreground space-y-2">
                         <div className="flex items-center space-x-2">
                           <span className="font-medium">Autobusy:</span>
+                          <div className="flex flex-wrap gap-1">
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">101</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">102</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">103</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">104</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">126</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">127</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">152</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <span className="font-medium">Tramwaje:</span>
                           <div className="flex space-x-2">
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">106</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">107</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">109</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">12</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">18</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">19</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">21</span>
                           </div>
                         </div>
                         <div className="flex items-center space-x-2">

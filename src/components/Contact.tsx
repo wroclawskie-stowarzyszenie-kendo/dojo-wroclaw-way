@@ -96,7 +96,8 @@ const Contact = () => {
                 <div className="text-2xl mb-3">🚌</div>
                 <h4 className="font-zen font-medium mb-2 text-accent">Dojazd</h4>
                 <p className="text-muted-foreground">
-                  Autobusy: 106, 107, 109<br />
+                  Autobusy: 101, 102, 103, 104, 126, 127, 152<br />
+                  Tramwaje: 12, 18, 19, 21<br />
                   Parking na terenie szkoły
                 </p>
               </div>
