@@ -80,28 +80,30 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Partner Organizations */}
+          {/* Organization Details */}
           <div className="space-y-4">
             <h3 className="text-lg font-zen font-medium text-soft-white">
-              Organizacje Partnerskie
+              Dane Stowarzyszenia
             </h3>
-            <div className="space-y-2">
-              <a 
-                href="http://www.kendo.pl" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block text-sm text-muted-foreground hover:text-crimson transition-fast"
-              >
-                Polska Federacja Kendo
-              </a>
-              <a 
-                href="http://www.vratislaviacup.pl" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block text-sm text-muted-foreground hover:text-crimson transition-fast"
-              >
-                Vratislavia Cup
-              </a>
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <div>
+                <p className="font-medium text-accent">Wrocławskie Stowarzyszenie Kendo</p>
+                <p>ul. Stanisławowska 47</p>
+                <p>54-611 Wrocław</p>
+              </div>
+              <div className="space-y-1">
+                <p>NIP: 894-27-31-009</p>
+                <p>KRS: 0000098327</p>
+                <p>REGON: 932821623</p>
+              </div>
+              <div>
+                <p>e-mail: wsk@kendo.wroclaw.pl</p>
+              </div>
+              <div>
+                <p className="font-medium text-accent">Konto WSK:</p>
+                <p>PKO BP III o/ Wrocław</p>
+                <p className="font-mono text-xs">53 1020 5242 0000 2902 0139 6548</p>
+              </div>
             </div>
           </div>
         </div>
