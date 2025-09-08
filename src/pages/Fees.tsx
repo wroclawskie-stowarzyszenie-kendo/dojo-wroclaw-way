@@ -274,7 +274,7 @@ const Fees = () => {
                 <Button 
                   variant="outline" 
                   className="border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground px-8 py-3"
-                  onClick={() => window.location.href = "/#contact"}
+                  onClick={() => window.location.href = "/#discipline-contacts"}
                 >
                   Przejdź do kontaktu
                 </Button>
