@@ -8,7 +8,7 @@ const Disciplines = () => {
     {
       title: "Kendo",
       japanese: "剣道",
-      description: "The way of the sword. Modern Japanese martial art descended from swordsmanship that uses bamboo swords and protective armor.",
+      description: "Droga miecza. Nowoczesna japońska sztuka walki wywodząca się z szermierki, wykorzystująca bambusowe miecze i pancerz ochronny.",
       image: kendoImage,
       contact: {
         name: "Ola",
@@ -18,7 +18,7 @@ const Disciplines = () => {
     {
       title: "Iaido", 
       japanese: "居合道",
-      description: "The art of drawing the sword. A meditative practice focusing on precise, fluid movements and mental discipline.",
+      description: "Sztuka dobywania miecza. Medytacyjna praktyka skupiająca się na precyzyjnych, płynnych ruchach i dyscyplinie mentalnej.",
       image: iaidoImage,
       contact: {
         name: "Michał",
@@ -28,7 +28,7 @@ const Disciplines = () => {
     {
       title: "Jodo",
       japanese: "杖道", 
-      description: "The way of the short staff. A traditional martial art using a wooden staff to defend against sword attacks.",
+      description: "Droga krótkiego kija. Tradycyjna sztuka walki wykorzystująca drewniany kij do obrony przed atakami mieczem.",
       image: jodoImage,
       contact: {
         name: "Michał",
@@ -42,10 +42,10 @@ const Disciplines = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-zen font-light mb-4 text-soft-white">
-            Three Paths of Mastery
+            Trzy Ścieżki Mistrzostwa
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Each discipline offers a unique journey toward physical and spiritual development
+            Każda dyscyplina oferuje unikalną podróż ku rozwojowi fizycznemu i duchowemu
           </p>
         </div>
 
@@ -61,7 +61,7 @@ const Disciplines = () => {
 
         <div className="text-center mt-12">
           <div className="inline-block bg-crimson text-primary-foreground px-6 py-3 rounded-full font-zen font-medium shadow-crimson">
-            First Training Free
+            Pierwszy Trening Gratis
           </div>
         </div>
       </div>

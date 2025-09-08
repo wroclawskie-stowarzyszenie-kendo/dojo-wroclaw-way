@@ -36,13 +36,13 @@ const Navigation = () => {
               onClick={() => scrollToSection('disciplines')}
               className="text-sm font-zen text-muted-foreground hover:text-crimson transition-fast"
             >
-              Disciplines
+              Dyscypliny
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-sm font-zen text-muted-foreground hover:text-crimson transition-fast"
             >
-              Contact
+              Kontakt
             </button>
             <Button 
               variant="outline" 
@@ -50,7 +50,7 @@ const Navigation = () => {
               onClick={() => scrollToSection('contact')}
               className="border-crimson/30 text-crimson hover:bg-crimson hover:text-primary-foreground"
             >
-              Start Training
+              Rozpocznij Trening
             </Button>
           </div>
         </div>

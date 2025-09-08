@@ -25,12 +25,12 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-zen font-light mb-6 fade-in text-soft-white">
           武道館
           <span className="block text-2xl md:text-3xl lg:text-4xl mt-4 text-muted-foreground font-normal">
-            Wrocław Martial Arts Dojo
+            Dojo Sztuk Walki we Wrocławiu
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl font-zen font-light mb-8 text-muted-foreground fade-in max-w-2xl mx-auto" style={{ animationDelay: '0.3s' }}>
-          Discover the Way of the Sword
+          Odkryj Drogę Miecza
           <span className="block text-lg mt-2 text-crimson">
             剣道 • 居合道 • 杖道
           </span>
@@ -43,7 +43,7 @@ const Hero = () => {
           style={{ animationDelay: '0.6s' }}
           onClick={() => scrollToSection('disciplines')}
         >
-          Start Your Journey
+          Rozpocznij Swoją Podróż
         </Button>
       </div>
 
