@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Users, DollarSign, HelpCircle, BookOpen } from "lucide-react";
+import { ArrowLeft, Users, HelpCircle, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -128,7 +128,6 @@ const KendoDetails = () => {
           <Card className="border-border hover:border-crimson transition-smooth">
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-crimson">
-                <DollarSign className="w-6 h-6" />
                 Opłaty
               </CardTitle>
             </CardHeader>
@@ -184,6 +183,8 @@ const KendoDetails = () => {
                     <p>54-611 Wrocław</p>
                     <p><strong>Nr konta:</strong> 53 1020 5242 0000 2902 0139 6548</p>
                     <p><strong>Bank:</strong> PKO BP III o/ Wrocław</p>
+                    <p className="mt-3"><strong>W tytule płatności prosimy wpisać:</strong></p>
+                    <p className="text-sm">darowizna_imię (lub imiona)_nazwisko_dyscyplina (lub dyscypliny)_miesiąc</p>
                   </div>
                 </div>
               </div>
