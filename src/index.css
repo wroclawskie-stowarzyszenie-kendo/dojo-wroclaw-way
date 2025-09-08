@@ -54,7 +54,7 @@ All colors MUST be HSL for proper theming.
     --soft-white: 0 0% 95%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 8% / 0.9), hsl(0 0% 4% / 0.95));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 8% / 0.6), hsl(0 0% 4% / 0.7));
     --gradient-crimson: linear-gradient(135deg, hsl(0 75% 55%), hsl(0 65% 45%));
     --gradient-indigo: linear-gradient(135deg, hsl(240 65% 60%), hsl(240 55% 50%));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 6%));
