@@ -24,7 +24,7 @@ const Navigation = () => {
         ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-elegant' 
         : 'bg-black/40 backdrop-blur-sm'
     }`}>
-      <div className="max-w-7xl mx-auto px-6 py-4">
+      <div className="w-full pl-0 pr-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="hover:opacity-80 transition-fast">
