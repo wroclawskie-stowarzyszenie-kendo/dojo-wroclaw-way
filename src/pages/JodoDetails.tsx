@@ -91,7 +91,7 @@ const JodoDetails = () => {
                 
                 <div>
                   <h4 className="font-zen font-medium text-accent mb-2">4. Czy muszę kupić własny kij?</h4>
-                  <p className="text-foreground">Tak, po pierwszym miesiącu treningów powinieneś zaopatrzyć się we własny kij treningowy (jo).</p>
+                  <p className="text-foreground">Tak, po pierwszych kilku miesiącach treningów powinieneś zaopatrzyć się we własny kij treningowy (jo).</p>
                 </div>
                 
                 <div>
