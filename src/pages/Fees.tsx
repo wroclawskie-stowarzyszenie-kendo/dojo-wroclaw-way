@@ -50,7 +50,7 @@ const Fees = () => {
       amount: "15 zł",
       icon: Shield,
       variant: "crimson" as const,
-      paymentTitle: "wynjem_bogu_imię_nazwisko_kendo_miesiąc",
+      paymentTitle: "wynajem_bogu_imię_nazwisko_kendo_miesiąc",
       deadline: "płatne razem z darowiznę miesięczną"
     },
     {
