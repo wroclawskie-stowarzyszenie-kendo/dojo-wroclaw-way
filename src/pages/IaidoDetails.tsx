@@ -76,7 +76,7 @@ const IaidoDetails = () => {
               <div className="space-y-4">
                 <div>
                   <h4 className="font-zen font-medium text-accent mb-2">1. Chcę zacząć trenować Iaido. Jak i kiedy mogę dołączyć?</h4>
-                  <p className="text-foreground">Nabór do grup początkujących Iaido odbywa się w trybie ciągłym. Wystarczy, że przyjdziesz na trening dla początkujących w wybranym przez Ciebie terminie.</p>
+                  <p className="text-foreground">Nabór do grup początkujących Iaido odbywa się w trybie ciągłym. Wystarczy, że przyjdziesz na trening w wybranym przez Ciebie terminie.</p>
                 </div>
                 
                 <div>
