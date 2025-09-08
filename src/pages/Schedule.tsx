@@ -99,8 +99,8 @@ const Schedule = () => {
               </p>
             </div>
 
-            <Card className="p-4 bg-gradient-subtle border-border">
-              <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant bg-card" style={{ minHeight: '700px' }}>
+            <Card className="p-0 bg-gradient-subtle border-border">
+              <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant bg-card" style={{ minHeight: '90vh' }}>
                 <iframe
                   src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FWarsaw&bgcolor=%23ffffff&src=Y19iMDgxYTFlNTY3MGY5MDVmZjNlMGVlOGNiODFlOTMyNGFhM2NlOGJhYWYxYjYyODVlM2QyNmVhMDRjYmI2ODgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000&mode=MONTH&showWeekends=false"
                   width="100%"
@@ -166,19 +166,15 @@ const Schedule = () => {
                     <Clock className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                     <div className="space-y-2">
                       <h4 className="text-xl font-zen font-medium text-soft-white">Godziny Treningów</h4>
-                      <div className="text-muted-foreground space-y-1">
-                        <div className="flex justify-between">
-                          <span className="font-medium text-crimson">Kendo:</span>
-                          <span>Poniedziałek, Środa, Piątek 18:30-20:30</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="font-medium text-indigo">Iaido:</span>
-                          <span>Wtorek, Czwartek 19:00-21:00</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="font-medium text-accent">Jodo:</span>
-                          <span>Sobota 10:00-12:00</span>
-                        </div>
+                      <div className="text-muted-foreground grid grid-cols-1 gap-2 sm:grid-cols-[auto,1fr]">
+                        <div className="font-medium text-crimson">Kendo początkujący:</div>
+                        <div className="sm:text-right">Poniedziałek, Piątek 18:30–19:30</div>
+                        <div className="font-medium text-crimson">Kendo zaawansowani:</div>
+                        <div className="sm:text-right">Poniedziałek, Piątek 18:30–20:30</div>
+                        <div className="font-medium text-indigo">Iaido:</div>
+                        <div className="sm:text-right">Środa 18:30–20:30</div>
+                        <div className="font-medium text-accent">Jodo:</div>
+                        <div className="sm:text-right">Poniedziałek 18:30–20:30</div>
                       </div>
                     </div>
                   </div>
@@ -186,12 +182,12 @@ const Schedule = () => {
               </div>
             </div>
 
-            <Card className="p-4 bg-gradient-subtle border-border">
+            <Card className="p-0 bg-gradient-subtle border-border">
               <div className="space-y-4">
                 <h4 className="text-2xl font-zen font-medium text-soft-white text-center">
                   Mapa Lokalizacji
                 </h4>
-                <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant" style={{ minHeight: '600px' }}>
+                <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant" style={{ minHeight: '80vh' }}>
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.4!2d17.031645!3d51.119867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc277a8b6c4e5%3A0x1234567890abcdef!2sKolista%2017%2C%2054-152%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1640995200000"
                     width="100%"
