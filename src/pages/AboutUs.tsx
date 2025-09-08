@@ -112,7 +112,7 @@ const AboutUs = () => {
                   <Button 
                     variant="outline" 
                     className="w-full" 
-                    onClick={() => window.open('https://drive.google.com/file/d/1iMOZG64QgWZiTb3r8YnvYqWoksQXcgKs/view?usp=drive_link', '_blank')}
+                    onClick={() => window.open("https://drive.google.com/file/d/1iMOZG64QgWZiTb3r8YnvYqWoksQXcgKs/view?usp=drive_link", "_blank")}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Pobierz Statut WSK (PDF)
@@ -121,6 +121,36 @@ const AboutUs = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Deklaracja WSK */}
+          <Card className="h-fit" id="declaration-section">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <ExternalLink className="h-5 w-5" />
+                Deklaracja WSK
+              </CardTitle>
+              <p className="text-sm text-muted-foreground">
+                Deklaracja członkowska Wrocławskiego Stowarzyszenia Kendo
+              </p>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <p className="text-muted-foreground">
+                  Deklaracja członkowska to dokument, który należy wypełnić i dostarczyć 
+                  do klubu w ciągu kilku pierwszych tygodni treningów. Zawiera podstawowe 
+                  informacje o członku stowarzyszenia.
+                </p>
+                <Button 
+                  variant="outline" 
+                  className="w-full" 
+                  onClick={() => window.open("https://drive.google.com/file/d/1BdvkeJ28jz4GCSJ0ZeT7YiSi1DD1gryY/view", "_blank")}
+                >
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  Pobierz Deklarację WSK (PDF)
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
 
         </div>
       </main>
