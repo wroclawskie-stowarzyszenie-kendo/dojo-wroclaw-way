@@ -12,7 +12,7 @@ const JodoDetails = () => {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <Link 
-              to="/" 
+              to="/#disciplines" 
               className="flex items-center space-x-3 hover:opacity-80 transition-fast"
             >
               <ArrowLeft className="w-5 h-5 text-muted-foreground" />
