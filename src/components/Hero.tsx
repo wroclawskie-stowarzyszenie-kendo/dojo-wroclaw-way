@@ -24,6 +24,9 @@ const Hero = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-zen font-light mb-6 fade-in text-soft-white">
           武道館
+          <span className="block text-3xl md:text-4xl lg:text-5xl mt-2 text-indigo font-light">
+            橋の都
+          </span>
           <span className="block text-2xl md:text-3xl lg:text-4xl mt-4 text-muted-foreground font-normal">
             Wrocławskie Stowarzyszenie Kendo
           </span>
