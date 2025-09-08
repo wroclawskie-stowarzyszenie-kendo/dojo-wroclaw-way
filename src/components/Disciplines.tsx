@@ -60,9 +60,15 @@ const Disciplines = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="inline-block bg-crimson text-primary-foreground px-6 py-3 rounded-full font-zen font-medium shadow-crimson">
+          <button 
+            onClick={() => {
+              const element = document.getElementById('contact');
+              element?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="inline-block bg-crimson text-primary-foreground px-6 py-3 rounded-full font-zen font-medium shadow-crimson hover:shadow-indigo transition-smooth cursor-pointer"
+          >
             Pierwszy Trening Gratis
-          </div>
+          </button>
         </div>
       </div>
     </section>
