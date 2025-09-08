@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, CreditCard, Calendar, Users, Award, Heart, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import SectionSeparator from "@/components/SectionSeparator";
 
 const Fees = () => {
   const feeData = [
@@ -138,6 +139,8 @@ const Fees = () => {
             </p>
           </div>
 
+          <SectionSeparator variant="waves" />
+
           {/* Payment Rules */}
           <Card className="p-8 bg-gradient-subtle border-border">
             <div className="space-y-6">
@@ -182,6 +185,8 @@ const Fees = () => {
               </div>
             </div>
           </Card>
+
+          <SectionSeparator variant="japanese" />
 
           {/* Fees Grid */}
           <div className="grid lg:grid-cols-2 gap-8">
@@ -246,6 +251,8 @@ const Fees = () => {
               );
             })}
           </div>
+
+          <SectionSeparator variant="waves" />
 
           {/* Contact Section */}
           <Card className="p-8 bg-gradient-subtle border-border text-center">

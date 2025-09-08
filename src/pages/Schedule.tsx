@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Calendar, Clock, Users, CheckCircle, Info } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import SectionSeparator from "@/components/SectionSeparator";
 
 const Schedule = () => {
   return (
@@ -89,6 +90,8 @@ const Schedule = () => {
             </Card>
           </div>
 
+          <SectionSeparator variant="japanese" />
+
           {/* Calendar Section - Enhanced */}
           <div className="space-y-8">
             <div className="text-center space-y-4">
@@ -114,6 +117,8 @@ const Schedule = () => {
               </div>
             </Card>
           </div>
+
+          <SectionSeparator variant="waves" />
 
           {/* Location Section - Enhanced */}
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -208,6 +213,8 @@ const Schedule = () => {
               </Card>
             </div>
           </div>
+
+          <SectionSeparator variant="japanese" />
 
           {/* Additional Info Section */}
           <Card className="p-8 bg-gradient-subtle border-border">

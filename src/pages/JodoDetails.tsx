@@ -4,6 +4,7 @@ import { ArrowLeft, Users, Coins, HelpCircle, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SectionSeparator from "@/components/SectionSeparator";
 
 const JodoDetails = () => {
   return (
@@ -64,6 +65,8 @@ const JodoDetails = () => {
             </CardContent>
           </Card>
 
+          <SectionSeparator variant="japanese" />
+
           {/* FAQ */}
           <Card className="border-border hover:border-crimson transition-smooth">
             <CardHeader>
@@ -123,6 +126,8 @@ const JodoDetails = () => {
               </div>
             </CardContent>
           </Card>
+
+          <SectionSeparator variant="waves" />
 
           {/* Opłaty */}
           <Card className="border-border hover:border-crimson transition-smooth">
@@ -187,6 +192,8 @@ const JodoDetails = () => {
             </CardContent>
           </Card>
 
+          <SectionSeparator variant="japanese" />
+
           {/* Trenerzy */}
           <Card className="border-border hover:border-crimson transition-smooth">
             <CardHeader>
@@ -227,6 +234,8 @@ const JodoDetails = () => {
               </div>
             </CardContent>
           </Card>
+
+          <SectionSeparator variant="waves" />
 
           {/* Call to Action */}
           <div className="text-center bg-gradient-crimson rounded-lg p-8">
