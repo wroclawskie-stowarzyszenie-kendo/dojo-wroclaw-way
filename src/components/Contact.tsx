@@ -127,13 +127,13 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 items-stretch">
             {/* Kendo Contact */}
-            <Card className="p-6 bg-card border-border hover:border-crimson transition-smooth hover:shadow-crimson group">
-              <div className="text-center space-y-4">
+            <Card className="p-6 bg-card border-border hover:border-crimson transition-smooth hover:shadow-crimson group flex flex-col">
+              <div className="text-center space-y-4 flex-1 flex flex-col">
                 <div className="text-3xl font-zen text-crimson group-hover:scale-110 transition-transform">剣道</div>
                 <h4 className="text-xl font-zen font-medium">Kendo</h4>
-                <div className="space-y-3">
+                <div className="space-y-3 flex-1 flex flex-col justify-end">
                   <div className="bg-gradient-subtle rounded-lg p-4">
                     <p className="font-zen font-medium text-accent mb-2">Ola</p>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
@@ -152,11 +152,11 @@ const Contact = () => {
             </Card>
 
             {/* Iaido & Jodo Contact */}
-            <Card className="p-6 bg-card border-border hover:border-indigo transition-smooth hover:shadow-indigo group">
-              <div className="text-center space-y-4">
+            <Card className="p-6 bg-card border-border hover:border-indigo transition-smooth hover:shadow-indigo group flex flex-col">
+              <div className="text-center space-y-4 flex-1 flex flex-col">
                 <div className="text-3xl font-zen text-indigo group-hover:scale-110 transition-transform">居合道 • 杖道</div>
                 <h4 className="text-xl font-zen font-medium">Iaido & Jodo</h4>
-                <div className="space-y-3">
+                <div className="space-y-3 flex-1 flex flex-col justify-end">
                   <div className="bg-gradient-subtle rounded-lg p-4">
                     <p className="font-zen font-medium text-accent mb-2">Michał</p>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
@@ -175,11 +175,11 @@ const Contact = () => {
             </Card>
 
             {/* General Contact */}
-            <Card className="p-6 bg-card border-border hover:border-accent transition-smooth hover:shadow-elegant group">
-              <div className="text-center space-y-4">
+            <Card className="p-6 bg-card border-border hover:border-accent transition-smooth hover:shadow-elegant group flex flex-col">
+              <div className="text-center space-y-4 flex-1 flex flex-col">
                 <div className="text-3xl group-hover:scale-110 transition-transform">📧</div>
                 <h4 className="text-xl font-zen font-medium">Informacje Ogólne</h4>
-                <div className="space-y-3">
+                <div className="space-y-3 flex-1 flex flex-col justify-end">
                   <div className="bg-gradient-subtle rounded-lg p-4 space-y-2">
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
                       <Mail className="w-4 h-4" />
