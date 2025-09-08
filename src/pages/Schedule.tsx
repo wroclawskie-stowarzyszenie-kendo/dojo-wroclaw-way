@@ -37,7 +37,7 @@ const Schedule = () => {
         style={{
           backgroundImage: `url(/lovable-uploads/42fd5a79-57c6-41d5-8fe7-04aec3c4f00d.png)`,
           backgroundSize: '120%',
-          backgroundPosition: '50% 20%',
+          backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat'
         }}
           >
