@@ -2,41 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Japanese Martial Arts Dojo Design System
+All colors MUST be HSL for proper theming.
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark Theme - Deep charcoal base */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Crimson red primary */
+    --primary: 0 75% 55%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 0 75% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Deep gray secondary */
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted grays */
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Indigo accent */
+    --accent: 240 65% 60%;
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 240 65% 50%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 20%;
+    --input: 0 0% 18%;
+    --ring: 0 75% 55%;
 
-    --radius: 0.5rem;
+    /* Japanese design elements */
+    --crimson: 0 75% 55%;
+    --crimson-muted: 0 75% 25%;
+    --indigo: 240 65% 60%;
+    --indigo-muted: 240 65% 30%;
+    --charcoal: 0 0% 12%;
+    --soft-white: 0 0% 95%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 8% / 0.9), hsl(0 0% 4% / 0.95));
+    --gradient-crimson: linear-gradient(135deg, hsl(0 75% 55%), hsl(0 65% 45%));
+    --gradient-indigo: linear-gradient(135deg, hsl(240 65% 60%), hsl(240 55% 50%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 6%));
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    --shadow-crimson: 0 0 30px hsl(0 75% 55% / 0.3);
+    --shadow-indigo: 0 0 30px hsl(240 65% 60% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +132,110 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-zen;
+    overflow-x: hidden;
+  }
+
+  /* Japanese-inspired text styles */
+  .text-crimson {
+    @apply text-[hsl(var(--crimson))];
+  }
+
+  .text-indigo {
+    @apply text-[hsl(var(--indigo))];
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-crimson {
+    background: var(--gradient-crimson);
+  }
+
+  .bg-gradient-indigo {
+    background: var(--gradient-indigo);
+  }
+
+  .bg-gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-crimson {
+    box-shadow: var(--shadow-crimson);
+  }
+
+  .shadow-indigo {
+    box-shadow: var(--shadow-indigo);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-fast {
+    transition: var(--transition-fast);
+  }
+
+  /* Scroll animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-in 0.8s ease-out forwards;
+  }
+
+  .slide-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slide-in-left 0.8s ease-out forwards;
+  }
+
+  .slide-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slide-in-right 0.8s ease-out forwards;
+  }
+
+  /* Japanese decorative elements */
+  .kanji-bg {
+    position: relative;
+  }
+
+  .kanji-bg::before {
+    content: '道';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+    color: hsl(0 0% 12% / 0.3);
+    font-weight: 100;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
