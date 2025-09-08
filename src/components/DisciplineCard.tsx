@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 interface DisciplineCardProps {
   title: string;
@@ -40,12 +41,24 @@ const DisciplineCard = ({ title, japanese, description, image, contact, delay = 
             <p className="text-sm text-muted-foreground font-mono">{contact.phone}</p>
           </div>
           
-          <Button 
-            variant="discipline" 
-            className="w-full transition-smooth hover:shadow-indigo"
-          >
-            Dowiedz Się Więcej
-          </Button>
+          {title === "Kendo" ? (
+            <Button 
+              asChild
+              variant="discipline" 
+              className="w-full transition-smooth hover:shadow-indigo"
+            >
+              <Link to="/kendo">
+                Dowiedz Się Więcej
+              </Link>
+            </Button>
+          ) : (
+            <Button 
+              variant="discipline" 
+              className="w-full transition-smooth hover:shadow-indigo"
+            >
+              Dowiedz Się Więcej
+            </Button>
+          )}
         </div>
       </div>
     </Card>
