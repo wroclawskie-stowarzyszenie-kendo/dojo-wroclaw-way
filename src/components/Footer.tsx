@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Facebook } from "lucide-react";
+import { asset } from "@/lib/utils";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           {/* Organization Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src="/lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png" alt="WSK Logo" className="h-8 w-8" />
+              <img src={asset('lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png')} alt="WSK Logo" className="h-8 w-8" />
               <span className="font-zen font-medium text-soft-white">WSK</span>
             </div>
             <h3 className="text-lg font-zen font-medium text-soft-white">
@@ -121,7 +122,7 @@ const Footer = () => {
                 aria-label="Facebook WSK"
               >
                 <img 
-                  src="/lovable-uploads/80b87cb5-8f74-4557-af69-a9f599887fce.png" 
+                  src={asset('lovable-uploads/80b87cb5-8f74-4557-af69-a9f599887fce.png')} 
                   alt="Facebook" 
                   className="w-8 h-8 group-hover:opacity-80 transition-opacity"
                 />
@@ -135,7 +136,7 @@ const Footer = () => {
                 aria-label="YouTube WSK"
               >
                 <img 
-                  src="/lovable-uploads/5d14cac4-93d7-404d-8a81-f4561f85f44c.png" 
+                  src={asset('lovable-uploads/5d14cac4-93d7-404d-8a81-f4561f85f44c.png')} 
                   alt="YouTube" 
                   className="w-8 h-8 group-hover:opacity-80 transition-opacity"
                 />
@@ -149,7 +150,7 @@ const Footer = () => {
                 aria-label="Instagram WSK"
               >
                 <img 
-                  src="/lovable-uploads/2c1ba0c1-711c-4f41-9d27-f1911549936d.png" 
+                  src={asset('lovable-uploads/2c1ba0c1-711c-4f41-9d27-f1911549936d.png')} 
                   alt="Instagram" 
                   className="w-8 h-8 group-hover:opacity-80 transition-opacity"
                 />

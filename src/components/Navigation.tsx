@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { asset } from "@/lib/utils";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,9 +29,9 @@ const Navigation = () => {
       <div className="w-full pl-4 pr-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="/" className="hover:opacity-80 transition-fast">
-              <img src="/lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png" alt="WSK Logo" className="h-10 w-10" />
-            </a>
+            <Link to="/" className="hover:opacity-80 transition-fast">
+              <img src={asset('lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png')} alt="WSK Logo" className="h-10 w-10" />
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -39,30 +41,30 @@ const Navigation = () => {
             >
               Dyscypliny
             </button>
-            <a 
-              href="/o-nas"
+            <Link 
+              to="/o-nas"
               className="text-sm font-zen text-muted-foreground hover:text-indigo transition-fast"
             >
               O nas
-            </a>
-            <a 
-              href="/harmonogram"
+            </Link>
+            <Link 
+              to="/harmonogram"
               className="text-sm font-zen text-muted-foreground hover:text-indigo transition-fast"
             >
               Harmonogram
-            </a>
+            </Link>
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-sm font-zen text-muted-foreground hover:text-crimson transition-fast"
             >
               Kontakt
             </button>
-            <a 
-              href="/oplaty"
+            <Link 
+              to="/oplaty"
               className="text-sm font-zen text-muted-foreground hover:text-accent transition-fast"
             >
               Opłaty
-            </a>
+            </Link>
             <Button 
               variant="outline" 
               size="sm"

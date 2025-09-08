@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, CreditCard, Calendar, Users, Award, Heart, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { asset } from "@/lib/utils";
 
 const Fees = () => {
   const feeData = [
@@ -114,7 +115,7 @@ const Fees = () => {
             >
               <ArrowLeft className="w-5 h-5 text-muted-foreground" />
               <div className="flex items-center space-x-2">
-                <img src="/lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png" alt="WSK Logo" className="h-8 w-8" />
+                <img src={asset('lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png')} alt="WSK Logo" className="h-8 w-8" />
                 <span className="font-zen font-medium text-soft-white">WSK</span>
               </div>
             </Link>
@@ -132,7 +133,7 @@ const Fees = () => {
           <div 
             className="relative text-center space-y-6 py-24 px-8 rounded-2xl overflow-hidden"
         style={{
-          backgroundImage: `url(/lovable-uploads/42fd5a79-57c6-41d5-8fe7-04aec3c4f00d.png)`,
+          backgroundImage: `url(${asset('lovable-uploads/42fd5a79-57c6-41d5-8fe7-04aec3c4f00d.png')})`,
           backgroundSize: '120%',
           backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat'

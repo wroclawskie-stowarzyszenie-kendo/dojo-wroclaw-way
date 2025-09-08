@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Users, Coins, HelpCircle, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { asset } from "@/lib/utils";
 
 const JodoDetails = () => {
   return (
@@ -17,7 +18,7 @@ const JodoDetails = () => {
             >
               <ArrowLeft className="w-5 h-5 text-muted-foreground" />
               <div className="flex items-center space-x-2">
-                <img src="/lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png" alt="WSK Logo" className="h-8 w-8" />
+                <img src={asset('lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png')} alt="WSK Logo" className="h-8 w-8" />
                 <span className="font-zen font-medium text-soft-white">WSK</span>
               </div>
             </Link>
@@ -31,7 +32,7 @@ const JodoDetails = () => {
       <section 
         className="pt-6 pb-12 px-6 relative overflow-hidden"
         style={{
-          backgroundImage: `url(/lovable-uploads/63ab6384-98cc-47cb-b535-c77a48dd145d.png)`,
+          backgroundImage: `url(${asset('lovable-uploads/63ab6384-98cc-47cb-b535-c77a48dd145d.png')})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat'
@@ -223,7 +224,7 @@ const JodoDetails = () => {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src="/lovable-uploads/56bf4c8f-ade9-46d6-bed4-4c86e8497d5b.png" 
+                      src={asset('lovable-uploads/56bf4c8f-ade9-46d6-bed4-4c86e8497d5b.png')} 
                       alt="Michał Szczepański"
                       className="w-full h-full object-cover object-[50%_20%] scale-125 origin-top"
                     />
@@ -237,7 +238,7 @@ const JodoDetails = () => {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src="/lovable-uploads/0ee7bb5c-3699-44e8-8846-29d30de453ad.png" 
+                      src={asset('lovable-uploads/0ee7bb5c-3699-44e8-8846-29d30de453ad.png')} 
                       alt="Agnieszka Krawczyk"
                       className="w-full h-full object-cover"
                     />
