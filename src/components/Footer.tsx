@@ -50,18 +50,33 @@ const Footer = () => {
               Dyscypliny
             </h3>
             <div className="space-y-2">
-              <div className="flex items-center space-x-2">
-                <span className="text-crimson font-zen">剣道</span>
-                <span className="text-sm text-muted-foreground">Kendo</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span className="text-indigo font-zen">居合道</span>
-                <span className="text-sm text-muted-foreground">Iaido</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span className="text-accent font-zen">杖道</span>
-                <span className="text-sm text-muted-foreground">Jodo</span>
-              </div>
+              <a 
+                href="https://pl.wikipedia.org/wiki/Kend%C5%8D" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:opacity-80 transition-fast group"
+              >
+                <span className="text-crimson font-zen group-hover:scale-105 transition-transform">剣道</span>
+                <span className="text-sm text-muted-foreground group-hover:text-crimson transition-fast">Kendo</span>
+              </a>
+              <a 
+                href="https://pl.wikipedia.org/wiki/Iaido" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:opacity-80 transition-fast group"
+              >
+                <span className="text-indigo font-zen group-hover:scale-105 transition-transform">居合道</span>
+                <span className="text-sm text-muted-foreground group-hover:text-indigo transition-fast">Iaido</span>
+              </a>
+              <a 
+                href="https://pl.wikipedia.org/wiki/J%C5%8Dd%C5%8D" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:opacity-80 transition-fast group"
+              >
+                <span className="text-accent font-zen group-hover:scale-105 transition-transform">杖道</span>
+                <span className="text-sm text-muted-foreground group-hover:text-accent transition-fast">Jodo</span>
+              </a>
             </div>
           </div>
 
