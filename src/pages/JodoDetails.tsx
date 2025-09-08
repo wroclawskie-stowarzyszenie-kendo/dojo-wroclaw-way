@@ -31,9 +31,9 @@ const JodoDetails = () => {
       <section 
         className="pt-6 pb-12 px-6 relative overflow-hidden"
         style={{
-          backgroundImage: `url(/lovable-uploads/42fd5a79-57c6-41d5-8fe7-04aec3c4f00d.png)`,
-          backgroundSize: '120%',
-          backgroundPosition: 'center top',
+          backgroundImage: `url(/lovable-uploads/63ab6384-98cc-47cb-b535-c77a48dd145d.png)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat'
         }}
       >
