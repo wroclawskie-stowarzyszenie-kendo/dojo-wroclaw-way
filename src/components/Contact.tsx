@@ -119,7 +119,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Instructors */}
-        <div id="discipline-contacts" className="bg-gradient-subtle rounded-2xl p-8 border border-border">
+        <div id="discipline-contacts" className="bg-gradient-subtle rounded-2xl p-4 md:p-8 border border-border">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-zen font-medium mb-4 text-soft-white">
               Kontakt do Dyscyplin
@@ -129,9 +129,9 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
             {/* Kendo Contact */}
-            <Card className="p-6 bg-card border-border hover:border-crimson transition-smooth hover:shadow-crimson group flex flex-col">
+            <Card className="p-4 md:p-6 bg-card border-border hover:border-crimson transition-smooth hover:shadow-crimson group flex flex-col">
               <div className="text-center space-y-4 flex-1 flex flex-col">
                 <div className="text-3xl font-zen text-crimson group-hover:scale-110 transition-transform">剣道</div>
                 <h4 className="text-xl font-zen font-medium">Kendo</h4>
@@ -140,11 +140,11 @@ const Contact = () => {
                     <p className="font-zen font-medium text-accent mb-2">Ola</p>
                     <div className="flex items-center justify-start gap-3 text-muted-foreground text-left">
                       <Phone className="w-4 h-4 flex-shrink-0" />
-                      <span className="font-mono text-sm">+48 798 416 649</span>
+                      <span className="font-mono text-xs sm:text-sm break-all">+48 798 416 649</span>
                     </div>
                     <div className="flex items-center justify-start gap-3 text-muted-foreground text-left">
                       <Mail className="w-4 h-4 flex-shrink-0" />
-                      <span className="text-sm">kendowroc@audiobiel.pl</span>
+                      <span className="text-xs sm:text-sm break-all">kendowroc@audiobiel.pl</span>
                     </div>
                   </div>
                   <div className="flex gap-2">
@@ -166,7 +166,7 @@ const Contact = () => {
             </Card>
 
             {/* Iaido & Jodo Contact */}
-            <Card className="p-6 bg-card border-border hover:border-indigo transition-smooth hover:shadow-indigo group flex flex-col">
+            <Card className="p-4 md:p-6 bg-card border-border hover:border-indigo transition-smooth hover:shadow-indigo group flex flex-col">
               <div className="text-center space-y-4 flex-1 flex flex-col">
                 <div className="text-3xl font-zen text-indigo group-hover:scale-110 transition-transform">居合道 • 杖道</div>
                 <h4 className="text-xl font-zen font-medium">Iaido & Jodo</h4>
@@ -175,11 +175,11 @@ const Contact = () => {
                     <p className="font-zen font-medium text-accent mb-2">Michał</p>
                     <div className="flex items-center justify-start gap-3 text-muted-foreground text-left">
                       <Phone className="w-4 h-4 flex-shrink-0" />
-                      <span className="font-mono text-sm">+48 602 738 234</span>
+                      <span className="font-mono text-xs sm:text-sm break-all">+48 602 738 234</span>
                     </div>
                     <div className="flex items-center justify-start gap-3 text-muted-foreground text-left">
                       <Mail className="w-4 h-4 flex-shrink-0" />
-                      <span className="text-sm">wsk.iaido.jodo@gmail.com</span>
+                      <span className="text-xs sm:text-sm break-all">wsk.iaido.jodo@gmail.com</span>
                     </div>
                   </div>
                   <div className="flex gap-2">
@@ -201,7 +201,7 @@ const Contact = () => {
             </Card>
 
             {/* General Contact */}
-            <Card className="p-6 bg-card border-border hover:border-accent transition-smooth hover:shadow-elegant group flex flex-col">
+            <Card className="p-4 md:p-6 bg-card border-border hover:border-accent transition-smooth hover:shadow-elegant group flex flex-col">
               <div className="text-center space-y-4 flex-1 flex flex-col">
                 <div className="text-3xl group-hover:scale-110 transition-transform">📧</div>
                 <h4 className="text-xl font-zen font-medium">Informacje Ogólne</h4>
@@ -209,11 +209,11 @@ const Contact = () => {
                   <div className="bg-gradient-subtle rounded-lg p-4 space-y-2">
                     <div className="flex items-start justify-start gap-3 text-muted-foreground text-left">
                       <Mail className="w-4 h-4 flex-shrink-0 mt-1" />
-                      <span className="text-sm">wsk@kendo.wroclaw.pl</span>
+                      <span className="text-xs sm:text-sm break-all">wsk@kendo.wroclaw.pl</span>
                     </div>
                     <div className="flex items-start justify-start gap-3 text-muted-foreground text-left">
                       <MapPin className="w-4 h-4 flex-shrink-0 mt-1" />
-                      <span className="text-sm">ul. Stanisławowska 47, 54-611 Wrocław</span>
+                      <span className="text-xs sm:text-sm break-words">ul. Stanisławowska 47, 54-611 Wrocław</span>
                     </div>
                   </div>
                   <Button variant="outline" className="w-full" asChild>
