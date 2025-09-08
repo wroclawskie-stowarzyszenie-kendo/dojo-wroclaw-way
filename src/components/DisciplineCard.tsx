@@ -12,9 +12,15 @@ interface DisciplineCardProps {
     phone: string;
   };
   delay?: number;
+  slug?: string;
 }
 
-const DisciplineCard = ({ title, japanese, description, image, contact, delay = 0 }: DisciplineCardProps) => {
+const DisciplineCard = ({ title, japanese, description, image, contact, delay = 0, slug }: DisciplineCardProps) => {
+  const getSlug = () => {
+    if (slug) return slug;
+    return title.toLowerCase();
+  };
+
   return (
     <Card className="group relative overflow-hidden bg-card border-border hover:border-crimson transition-smooth hover:shadow-crimson flex flex-col h-full"
           style={{ animationDelay: `${delay}s` }}>
@@ -41,24 +47,15 @@ const DisciplineCard = ({ title, japanese, description, image, contact, delay = 
             <p className="text-sm text-muted-foreground font-mono">{contact.phone}</p>
           </div>
           
-          {title === "Kendo" ? (
-            <Button 
-              asChild
-              variant="discipline" 
-              className="w-full transition-smooth hover:shadow-indigo"
-            >
-              <Link to="/kendo">
-                Dowiedz Się Więcej
-              </Link>
-            </Button>
-          ) : (
-            <Button 
-              variant="discipline" 
-              className="w-full transition-smooth hover:shadow-indigo"
-            >
+          <Button 
+            asChild
+            variant="discipline" 
+            className="w-full transition-smooth hover:shadow-indigo"
+          >
+            <Link to={`/${getSlug()}`}>
               Dowiedz Się Więcej
-            </Button>
-          )}
+            </Link>
+          </Button>
         </div>
       </div>
     </Card>
