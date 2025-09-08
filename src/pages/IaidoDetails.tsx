@@ -108,7 +108,7 @@ const IaidoDetails = () => {
                 
                 <div>
                   <h4 className="font-zen font-medium text-accent mb-2">6. Czy jest jakiś limit wieku?</h4>
-                  <p className="text-foreground">Nie ma żadnych limitów wiekowych! W Iaido może trenować każdy, niezależnie od wieku. To świetny sposób na poprawę koncentracji, kształtowanie charakteru i rozwój duchowy.</p>
+                  <p className="text-foreground">Nie ma żadnych limitów wiekowych! Każdy może trenować Iaido, niezależnie od wieku. To świetny sposób na poprawę koncentracji, kształtowanie charakteru i rozwój duchowy.</p>
                 </div>
                 
                 <div>
