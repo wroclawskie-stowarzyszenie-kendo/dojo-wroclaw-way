@@ -112,19 +112,49 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border mt-8 pt-8 relative">
           <div className="flex justify-between items-center">
-            <a 
-              href="https://www.facebook.com/WSKendo" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group flex items-center justify-center w-8 h-8 hover:scale-105 transition-smooth"
-              aria-label="Facebook WSK"
-            >
-              <img 
-                src="/lovable-uploads/80b87cb5-8f74-4557-af69-a9f599887fce.png" 
-                alt="Facebook" 
-                className="w-8 h-8 group-hover:opacity-80 transition-opacity"
-              />
-            </a>
+            <div className="flex items-center space-x-3">
+              <a 
+                href="https://www.facebook.com/WSKendo" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center w-8 h-8 hover:scale-105 transition-smooth"
+                aria-label="Facebook WSK"
+              >
+                <img 
+                  src="/lovable-uploads/80b87cb5-8f74-4557-af69-a9f599887fce.png" 
+                  alt="Facebook" 
+                  className="w-8 h-8 group-hover:opacity-80 transition-opacity"
+                />
+              </a>
+              
+              <a 
+                href="https://www.instagram.com/kendo_wroclaw/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center w-8 h-8 hover:scale-105 transition-smooth"
+                aria-label="Instagram WSK"
+              >
+                <img 
+                  src="/lovable-uploads/2c1ba0c1-711c-4f41-9d27-f1911549936d.png" 
+                  alt="Instagram" 
+                  className="w-8 h-8 group-hover:opacity-80 transition-opacity"
+                />
+              </a>
+              
+              <a 
+                href="https://www.youtube.com/channel/UC-bNyJr6YtZ2HJebs7NjQHg" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center w-8 h-8 hover:scale-105 transition-smooth"
+                aria-label="YouTube WSK"
+              >
+                <img 
+                  src="/lovable-uploads/5d14cac4-93d7-404d-8a81-f4561f85f44c.png" 
+                  alt="YouTube" 
+                  className="w-8 h-8 group-hover:opacity-80 transition-opacity"
+                />
+              </a>
+            </div>
             
             <div className="text-center flex-1">
               <p className="text-sm text-muted-foreground">
