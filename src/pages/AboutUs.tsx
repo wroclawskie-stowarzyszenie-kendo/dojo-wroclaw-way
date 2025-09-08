@@ -75,7 +75,7 @@ const AboutUs = () => {
                     <Button 
                       variant="outline" 
                       className="w-full" 
-                      onClick={() => window.open('https://www.kendo.wroclaw.pl/o-nas/statut-wsk', '_blank')}
+                      onClick={() => window.open('https://drive.google.com/file/d/1iMOZG64QgWZiTb3r8YnvYqWoksQXcgKs/view?usp=drive_link', '_blank')}
                     >
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Pobierz Statut WSK (PDF)
