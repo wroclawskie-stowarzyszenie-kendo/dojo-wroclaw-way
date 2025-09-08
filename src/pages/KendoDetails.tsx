@@ -4,6 +4,9 @@ import { ArrowLeft, Users, Coins, HelpCircle, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { asset } from "@/lib/utils";
+import wieslawBielImg from "@/assets/wieslaw-biel.png";
+import nataliaMajImg from "@/assets/natalia-maj.png";
+import krzysztofBelczykImg from "@/assets/krzysztof-belczyk.png";
 
 const KendoDetails = () => {
   return (
@@ -229,7 +232,7 @@ const KendoDetails = () => {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src={asset('lovable-uploads/e4113638-9cef-487f-ae49-46982d467b14.png')} 
+                      src={wieslawBielImg} 
                       alt="Wiesław Biel"
                       className="w-full h-full object-cover object-[50%_12%] scale-150 origin-top"
                     />
@@ -242,7 +245,7 @@ const KendoDetails = () => {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src={asset('lovable-uploads/b8b1f47f-62df-4931-a8c0-4f866e8a4c84.png')} 
+                      src={nataliaMajImg} 
                       alt="Natalia Maj"
                       className="w-full h-full object-cover"
                     />
@@ -254,7 +257,7 @@ const KendoDetails = () => {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src={asset('lovable-uploads/1da545e7-8ad0-4aa9-9b2a-c9b6a1a87bc9.png')} 
+                      src={krzysztofBelczykImg} 
                       alt="Krzysztof Belczyk"
                       className="w-full h-full object-cover"
                     />

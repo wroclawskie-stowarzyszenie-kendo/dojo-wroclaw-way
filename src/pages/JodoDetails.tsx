@@ -4,6 +4,8 @@ import { ArrowLeft, Users, Coins, HelpCircle, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { asset } from "@/lib/utils";
+import michalSzczepanski from "@/assets/michal-szczepanski.png";
+import agnieszkaKrawczyk from "@/assets/agnieszka-krawczyk.png";
 
 const JodoDetails = () => {
   return (
@@ -224,7 +226,7 @@ const JodoDetails = () => {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src={asset('lovable-uploads/56bf4c8f-ade9-46d6-bed4-4c86e8497d5b.png')} 
+                      src={michalSzczepanski} 
                       alt="Michał Szczepański"
                       className="w-full h-full object-cover object-[50%_20%] scale-125 origin-top"
                     />
@@ -238,7 +240,7 @@ const JodoDetails = () => {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src={asset('lovable-uploads/0ee7bb5c-3699-44e8-8846-29d30de453ad.png')} 
+                      src={agnieszkaKrawczyk} 
                       alt="Agnieszka Krawczyk"
                       className="w-full h-full object-cover"
                     />
