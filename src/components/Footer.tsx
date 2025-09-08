@@ -166,6 +166,17 @@ const Footer = () => {
             </div>
             
             <div className="w-8"></div> {/* Spacer for balance */}
+            {/* Invisible 1x1 pixel to trigger GitHub sync */}
+            <img
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt=""
+              width="1"
+              height="1"
+              loading="lazy"
+              decoding="async"
+              aria-hidden="true"
+              className="opacity-0 pointer-events-none"
+            />
           </div>
         </div>
       </div>
