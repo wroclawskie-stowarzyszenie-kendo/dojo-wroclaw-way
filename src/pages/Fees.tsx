@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CreditCard, Calendar, Users, Award, Heart, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
+import Footer from "@/components/Footer";
 
 const Fees = () => {
   const feeData = [
@@ -267,6 +268,7 @@ const Fees = () => {
 
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
