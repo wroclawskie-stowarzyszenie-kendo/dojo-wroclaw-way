@@ -28,8 +28,10 @@ const Contact = () => {
                   <span className="font-mono text-sm">+48 798 416 649</span>
                 </div>
               </div>
-              <Button variant="outline" size="sm" className="w-full">
-                Skontaktuj się z Instruktorem
+              <Button variant="outline" size="sm" className="w-full" asChild>
+                <a href="tel:+48798416649">
+                  Kontakt telefoniczny
+                </a>
               </Button>
             </div>
           </Card>
@@ -46,8 +48,10 @@ const Contact = () => {
                   <span className="font-mono text-sm">+48 602 738 234</span>
                 </div>
               </div>
-              <Button variant="outline" size="sm" className="w-full">
-                Skontaktuj się z Instruktorem
+              <Button variant="outline" size="sm" className="w-full" asChild>
+                <a href="tel:+48602738234">
+                  Kontakt telefoniczny
+                </a>
               </Button>
             </div>
           </Card>
@@ -67,8 +71,10 @@ const Contact = () => {
                   <span className="text-sm">Wrocław, Poland</span>
                 </div>
               </div>
-              <Button variant="outline" size="sm" className="w-full">
-                Wyślij Email
+              <Button variant="outline" size="sm" className="w-full" asChild>
+                <a href="mailto:wsk@kendo.wroclaw.pl">
+                  Wyślij Email
+                </a>
               </Button>
             </div>
           </Card>
