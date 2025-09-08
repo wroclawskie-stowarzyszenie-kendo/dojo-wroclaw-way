@@ -98,14 +98,14 @@ const Contact = () => {
             
             <div className="aspect-video rounded-lg overflow-hidden border border-border shadow-elegant">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.8983456789!2d17.0314567890123!3d51.1201234567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc27b12345678%3A0x123456789abcdef0!2sSzko%C5%82a%20Podstawowa%20nr%2033%2C%20Kolista%2017%2C%2054-152%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1234567890123"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.4!2d17.031645!3d51.119867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc277a8b6c4e5%3A0x1234567890abcdef!2sKolista%2017%2C%2054-152%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1640995200000"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Lokalizacja treningów - Szkoła Podstawowa nr 33"
+                title="Lokalizacja treningów - ul. Kolista 17, Wrocław"
               ></iframe>
             </div>
           </div>
