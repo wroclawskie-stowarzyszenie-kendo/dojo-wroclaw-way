@@ -99,10 +99,10 @@ const Schedule = () => {
               </p>
             </div>
 
-            <Card className="p-0 px-6 bg-gradient-subtle border-border">
+            <Card className="p-6 bg-gradient-subtle border-border">
               <div className="rounded-lg overflow-hidden border border-border shadow-elegant bg-card" style={{ height: '38vh' }}>
                 <iframe
-                  src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FWarsaw&bgcolor=%23ffffff&src=Y19iMDgxYTFlNTY3MGY5MDVmZjNlMGVlOGNiODFlOTMyNGFhM2NlOGJhYWYxYjYyODVlM2QyNmVhMDRjYmI2ODgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000&mode=MONTH&showWeekends=false"
+                  src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FWarsaw&bgcolor=%23ffffff&src=Y19iMDgxYTFlNTY3MGY5MDVmZjNlMGVlOGNiODFlOTMyNGFhM2NlODRjYmI2ODgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000&mode=MONTH&showWeekends=false"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
