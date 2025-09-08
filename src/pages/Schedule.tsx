@@ -33,13 +33,27 @@ const Schedule = () => {
         <div className="max-w-7xl mx-auto space-y-16">
           
           {/* Hero Section */}
-          <div className="text-center space-y-6">
-            <h2 className="text-4xl md:text-6xl font-zen font-light text-soft-white">
-              Harmonogram Treningów
-            </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Odkryj tradycyjne japońskie sztuki walki w sercu Wrocławia. Sprawdź harmonogram treningów, poznaj lokalizację i rozpocznij swoją podróż z mieczem.
-            </p>
+          <div 
+            className="relative text-center space-y-6 py-24 px-8 rounded-2xl overflow-hidden"
+            style={{
+              backgroundImage: `url(/lovable-uploads/42fd5a79-57c6-41d5-8fe7-04aec3c4f00d.png)`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-black/60"></div>
+            
+            {/* Content */}
+            <div className="relative z-10">
+              <h2 className="text-4xl md:text-6xl font-zen font-light text-white mb-6">
+                Harmonogram Treningów
+              </h2>
+              <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">
+                Odkryj tradycyjne japońskie sztuki walki w sercu Wrocławia. Sprawdź harmonogram treningów, poznaj lokalizację i rozpocznij swoją podróż z mieczem.
+              </p>
+            </div>
           </div>
 
           {/* Season Info Cards - Larger Layout */}

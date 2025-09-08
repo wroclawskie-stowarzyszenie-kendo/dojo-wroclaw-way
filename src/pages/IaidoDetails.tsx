@@ -12,19 +12,30 @@ const IaidoDetails = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-12 px-6 bg-gradient-subtle">
-        <div className="max-w-4xl mx-auto">
-          <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-crimson transition-smooth mb-6">
+      <section 
+        className="pt-24 pb-12 px-6 relative overflow-hidden"
+        style={{
+          backgroundImage: `url(/lovable-uploads/42fd5a79-57c6-41d5-8fe7-04aec3c4f00d.png)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        
+        <div className="max-w-4xl mx-auto relative z-10">
+          <Link to="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-smooth mb-6">
             <ArrowLeft className="w-4 h-4" />
             Powrót do strony głównej
           </Link>
           
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-zen font-light mb-4 text-soft-white">
+            <h1 className="text-4xl md:text-5xl font-zen font-light mb-4 text-white">
               Iaido
             </h1>
             <p className="text-3xl font-zen font-light text-crimson mb-4">居合道</p>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Droga harmonii z mieczem. Japońska sztuka walki polegająca na szybkim wyciągnięciu miecza, cięciu i schowaniu go z powrotem.
             </p>
           </div>

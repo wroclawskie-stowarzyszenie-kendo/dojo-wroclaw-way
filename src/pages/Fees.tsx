@@ -130,13 +130,27 @@ const Fees = () => {
         <div className="max-w-6xl mx-auto space-y-12">
           
           {/* Hero Section */}
-          <div className="text-center space-y-6">
-            <h2 className="text-4xl md:text-5xl font-zen font-light text-soft-white">
-              Cennik i Opłaty
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Przejrzyste zasady płatności dla członków Wrocławskiego Stowarzyszenia Kendo
-            </p>
+          <div 
+            className="relative text-center space-y-6 py-24 px-8 rounded-2xl overflow-hidden"
+            style={{
+              backgroundImage: `url(/lovable-uploads/42fd5a79-57c6-41d5-8fe7-04aec3c4f00d.png)`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-black/60"></div>
+            
+            {/* Content */}
+            <div className="relative z-10">
+              <h2 className="text-4xl md:text-5xl font-zen font-light text-white mb-6">
+                Cennik i Opłaty
+              </h2>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+                Przejrzyste zasady płatności dla członków Wrocławskiego Stowarzyszenia Kendo
+              </p>
+            </div>
           </div>
 
           <SectionSeparator variant="waves" />
