@@ -44,6 +44,7 @@ const Contact = () => {
                   <div className="text-2xl font-zen text-crimson mb-2">📅</div>
                   <h4 className="font-zen font-medium text-accent mb-1">Start Sezonu</h4>
                   <p className="text-sm text-muted-foreground">15 września 2025</p>
+                  <p className="text-sm text-muted-foreground">18:30</p>
                 </div>
                 <div className="bg-card rounded-lg p-4 border border-border">
                   <div className="text-2xl font-zen text-indigo mb-2">🚪</div>
