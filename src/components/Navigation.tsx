@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 import { asset } from "@/lib/utils";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +56,7 @@ const Navigation = () => {
               Harmonogram
             </Link>
             <button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('discipline-contacts')}
               className="text-sm font-zen text-muted-foreground hover:text-crimson transition-fast"
             >
               Kontakt
@@ -68,13 +70,83 @@ const Navigation = () => {
             <Button 
               variant="outline" 
               size="sm"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('discipline-contacts')}
               className="border-crimson/30 text-crimson hover:bg-crimson hover:text-primary-foreground"
             >
               Rozpocznij Trening
             </Button>
           </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-muted-foreground hover:text-crimson"
+            >
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-md">
+            <div className="px-4 py-4 space-y-4">
+              <button 
+                onClick={() => {
+                  scrollToSection('disciplines');
+                  setIsMobileMenuOpen(false);
+                }}
+                className="block w-full text-left text-sm font-zen text-muted-foreground hover:text-crimson transition-fast py-2"
+              >
+                Dyscypliny
+              </button>
+              <Link 
+                to="/o-nas"
+                className="block w-full text-left text-sm font-zen text-muted-foreground hover:text-indigo transition-fast py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                O nas
+              </Link>
+              <Link 
+                to="/harmonogram"
+                className="block w-full text-left text-sm font-zen text-muted-foreground hover:text-indigo transition-fast py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Harmonogram
+              </Link>
+              <button 
+                onClick={() => {
+                  scrollToSection('discipline-contacts');
+                  setIsMobileMenuOpen(false);
+                }}
+                className="block w-full text-left text-sm font-zen text-muted-foreground hover:text-crimson transition-fast py-2"
+              >
+                Kontakt
+              </button>
+              <Link 
+                to="/oplaty"
+                className="block w-full text-left text-sm font-zen text-muted-foreground hover:text-accent transition-fast py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Opłaty
+              </Link>
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => {
+                  scrollToSection('discipline-contacts');
+                  setIsMobileMenuOpen(false);
+                }}
+                className="w-full border-crimson/30 text-crimson hover:bg-crimson hover:text-primary-foreground mt-4"
+              >
+                Rozpocznij Trening
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );

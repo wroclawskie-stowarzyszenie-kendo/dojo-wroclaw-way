@@ -286,7 +286,7 @@ const Schedule = () => {
               </div>
 
               <div className="pt-8">
-                <Link to="/#contact">
+                <Link to="/#discipline-contacts">
                   <Button 
                     variant="hero" 
                     size="lg" 
