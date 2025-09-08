@@ -202,7 +202,7 @@ const IaidoDetails = () => {
                     <img 
                       src="/lovable-uploads/56bf4c8f-ade9-46d6-bed4-4c86e8497d5b.png" 
                       alt="Michał Szczepański"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-[50%_20%] scale-125 origin-top"
                     />
                   </div>
                   <h4 className="font-zen font-medium text-accent mb-2">Michał Szczepański</h4>
