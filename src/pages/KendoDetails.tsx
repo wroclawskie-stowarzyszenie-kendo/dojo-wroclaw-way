@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Users, HelpCircle, BookOpen } from "lucide-react";
+import { ArrowLeft, HelpCircle, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -194,23 +194,48 @@ const KendoDetails = () => {
           {/* Trenerzy */}
           <Card className="border-border hover:border-crimson transition-smooth">
             <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-crimson">
-                <Users className="w-6 h-6" />
+              <CardTitle className="text-crimson">
                 Trenerzy Kendo
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/e4113638-9cef-487f-ae49-46982d467b14.png" 
+                      alt="Wiesław Biel"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <h4 className="font-zen font-medium text-accent mb-2">Wiesław Biel</h4>
                   <p className="text-muted-foreground">Renshi 6 dan Kendo</p>
                   <p className="text-sm text-muted-foreground mt-1">Główny trener</p>
                 </div>
                 
                 <div className="text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/b8b1f47f-62df-4931-a8c0-4f866e8a4c84.png" 
+                      alt="Natalia Maj"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <h4 className="font-zen font-medium text-accent mb-2">Natalia Maj</h4>
                   <p className="text-muted-foreground">5 dan Kendo</p>
                   <p className="text-sm text-muted-foreground mt-1">Asystent, Szef Komisji ds. Marketingu PZK</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/1da545e7-8ad0-4aa9-9b2a-c9b6a1a87bc9.png" 
+                      alt="Krzysztof Belczyk"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="font-zen font-medium text-accent mb-2">Krzysztof Belczyk</h4>
+                  <p className="text-muted-foreground">3 dan Kendo</p>
                 </div>
               </div>
             </CardContent>
