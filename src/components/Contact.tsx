@@ -188,7 +188,7 @@ const Contact = () => {
                     </div>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
                       <MapPin className="w-4 h-4" />
-                      <span className="text-sm">Wrocław, Poland</span>
+                      <span className="text-sm">ul. Stanisławowska 47, 54-611 Wrocław</span>
                     </div>
                   </div>
                   <Button variant="outline" className="w-full" asChild>
