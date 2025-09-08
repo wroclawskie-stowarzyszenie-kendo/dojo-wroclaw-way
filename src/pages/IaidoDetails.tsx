@@ -91,7 +91,7 @@ const IaidoDetails = () => {
                 
                 <div>
                   <h4 className="font-zen font-medium text-accent mb-2">4. Czy muszę kupić własny miecz?</h4>
-                  <p className="text-foreground">Po pierwszych miesiącach warto zaopatrzyć się we własny bokken. Iaito (miecz treningowy bez ostrego ostrza) to wydatek w późniejszym terminie dla bardziej zaawansowanych osób.</p>
+                  <p className="text-foreground">Po pierwszych miesiącach warto zaopatrzyć się we własny bokken. Iaito (miecz treningowy bez ostrego ostrza) to zakup, który można odłożyć na późniejszy etap dla bardziej zaawansowanych osób.</p>
                 </div>
                 
                 <div>
