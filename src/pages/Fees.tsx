@@ -271,11 +271,13 @@ const Fees = () => {
                 W przypadku pytań dotyczących opłat, skontaktuj się z odpowiednimi osobami kontaktowymi dla swojej dyscypliny
               </p>
               <div className="pt-6">
-                <Link to="/#contact">
-                  <Button variant="outline" className="border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground px-8 py-3">
-                    Przejdź do kontaktu
-                  </Button>
-                </Link>
+                <Button 
+                  variant="outline" 
+                  className="border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground px-8 py-3"
+                  onClick={() => window.location.href = "/#contact"}
+                >
+                  Przejdź do kontaktu
+                </Button>
               </div>
             </div>
           </Card>
