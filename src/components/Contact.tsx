@@ -15,6 +15,17 @@ const Contact = () => {
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
             Odkryj tradycyjne japońskie sztuki walki w sercu Wrocławia
           </p>
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="text-lg px-8 py-4 shadow-crimson hover:shadow-indigo"
+            onClick={() => {
+              const element = document.getElementById('discipline-contacts');
+              element?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            Skontaktuj się z nami
+          </Button>
         </div>
 
         {/* Training Schedule & Location */}
@@ -106,7 +117,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Instructors */}
-        <div className="bg-gradient-subtle rounded-2xl p-8 border border-border">
+        <div id="discipline-contacts" className="bg-gradient-subtle rounded-2xl p-8 border border-border">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-zen font-medium mb-4 text-soft-white">
               Kontakt do Dyscyplin
