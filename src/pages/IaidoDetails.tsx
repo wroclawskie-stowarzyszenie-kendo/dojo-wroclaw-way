@@ -101,7 +101,7 @@ const IaidoDetails = () => {
                     <ul className="list-disc list-inside ml-4 space-y-1">
                       <li><strong>Sprzęt początkowy:</strong> Na początku potrzebujesz tylko stroju sportowego, a miecz dostaniesz w klubie.</li>
                       <li><strong>Strój do Iaido:</strong> Tradycyjny strój (keiko-gi i hakama) to wydatek rzędu 250-300 zł, ale nie jest wymagany na początku.</li>
-                      <li><strong>Miecz treningowy:</strong> Własny miecz to koszt około 200-400 zł, ale wystarczy na lata.</li>
+                      <li><strong>Bokken treningowy:</strong> Własny bokken to koszt około 200-400 zł i wystarczy na lata. Iaito to większy wydatek wymagany dopiero podczas oficjalnych egzaminów - zazwyczaj służy przez długie lata treningów.</li>
                     </ul>
                   </div>
                 </div>
