@@ -205,7 +205,7 @@ const KendoDetails = () => {
                     <img 
                       src="/lovable-uploads/e4113638-9cef-487f-ae49-46982d467b14.png" 
                       alt="Wiesław Biel"
-                      className="w-full h-full object-cover object-[center_45%]"
+                      className="w-full h-full object-cover object-[50%_12%] scale-150 origin-top"
                     />
                   </div>
                   <h4 className="font-zen font-medium text-accent mb-2">Wiesław Biel</h4>
