@@ -37,6 +37,12 @@ const Navigation = () => {
             >
               Dyscypliny
             </button>
+            <a 
+              href="/harmonogram"
+              className="text-sm font-zen text-muted-foreground hover:text-indigo transition-fast"
+            >
+              Harmonogram
+            </a>
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-sm font-zen text-muted-foreground hover:text-crimson transition-fast"
