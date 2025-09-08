@@ -72,18 +72,6 @@ const Fees = () => {
       variant: "accent" as const,
       paymentTitle: "skladka_czlonkowska_imię_nazwisko",
       deadline: "do końca stycznia każdego roku"
-    },
-    {
-      id: 7,
-      title: "Licencja zawodnicza PZK",
-      description: "Opłata licencji zawodniczej Polskiego Związku Kendo",
-      frequency: "raz w roku",
-      amount: "wg uchwały PZK",
-      icon: Award,
-      variant: "crimson" as const,
-      paymentTitle: "licencja_pzk_imię_nazwisko_dyscyplina",
-      deadline: "do końca stycznia każdego roku",
-      note: "Aktualna wysokość opłat licencyjnych podawana na Facebook do 10 stycznia"
     }
   ];
 
@@ -268,7 +256,7 @@ const Fees = () => {
                 W przypadku pytań dotyczących opłat, skontaktuj się z odpowiednimi osobami kontaktowymi dla swojej dyscypliny
               </p>
               <Link to="/#contact">
-                <Button variant="outline" className="border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground">
+                <Button variant="outline" className="border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground px-8 py-3">
                   Przejdź do kontaktu
                 </Button>
               </Link>
