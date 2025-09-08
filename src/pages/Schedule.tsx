@@ -191,7 +191,7 @@ const Schedule = () => {
 
               <Card className="p-6 bg-gradient-subtle border-border">
                 <div className="space-y-4">
-                  <div className="rounded-lg overflow-hidden border border-border shadow-elegant" style={{ height: '60vh' }}>
+                  <div className="rounded-lg overflow-hidden border border-border shadow-elegant" style={{ height: '47vh' }}>
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.4!2d17.031645!3d51.119867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc277a8b6c4e5%3A0x1234567890abcdef!2sKolista%2017%2C%2054-152%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1640995200000"
                       width="100%"
