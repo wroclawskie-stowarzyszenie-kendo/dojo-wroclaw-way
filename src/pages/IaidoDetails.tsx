@@ -4,7 +4,6 @@ import { ArrowLeft, Users, Coins, HelpCircle, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SectionSeparator from "@/components/SectionSeparator";
 
 const IaidoDetails = () => {
   return (
@@ -76,8 +75,6 @@ const IaidoDetails = () => {
             </CardContent>
           </Card>
 
-          <SectionSeparator variant="waves" />
-
           {/* FAQ */}
           <Card className="border-border hover:border-crimson transition-smooth">
             <CardHeader>
@@ -137,8 +134,6 @@ const IaidoDetails = () => {
               </div>
             </CardContent>
           </Card>
-
-          <SectionSeparator variant="japanese" />
 
           {/* Opłaty */}
           <Card className="border-border hover:border-crimson transition-smooth">
@@ -203,8 +198,6 @@ const IaidoDetails = () => {
             </CardContent>
           </Card>
 
-          <SectionSeparator variant="waves" />
-
           {/* Trenerzy */}
           <Card className="border-border hover:border-crimson transition-smooth">
             <CardHeader>
@@ -245,8 +238,6 @@ const IaidoDetails = () => {
               </div>
             </CardContent>
           </Card>
-
-          <SectionSeparator variant="japanese" />
 
           {/* Call to Action */}
           <div className="text-center bg-gradient-crimson rounded-lg p-8">

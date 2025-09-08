@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Users, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
-import SectionSeparator from "@/components/SectionSeparator";
 
 const AboutUs = () => {
   return (
@@ -55,8 +54,6 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-
-          <SectionSeparator variant="japanese" />
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Władze WSK */}
