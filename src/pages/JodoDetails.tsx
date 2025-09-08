@@ -242,7 +242,7 @@ const JodoDetails = () => {
               size="lg"
               className="font-zen font-medium"
             >
-              <Link to="/#contact">
+              <Link to="/#discipline-contacts">
                 Skontaktuj się z nami
               </Link>
             </Button>
