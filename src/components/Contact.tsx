@@ -26,9 +26,6 @@ const Contact = () => {
               <h3 className="text-2xl font-zen font-medium mb-4 text-soft-white">
                 Harmonogram Treningów - Sezon 2025/2026
               </h3>
-              <p className="text-muted-foreground mb-6">
-                Sprawdź terminarz zawodów, seminariów i wydarzeń specjalnych
-              </p>
               
               {/* Season Info Cards */}
               <div className="grid md:grid-cols-3 gap-4 mb-8">
@@ -70,9 +67,6 @@ const Contact = () => {
               <h3 className="text-2xl font-zen font-medium mb-4 text-soft-white">
                 Lokalizacja Dojo
               </h3>
-              <p className="text-muted-foreground">
-                Znajdziesz nas w centrum Wrocławia z doskonałym dojazdem komunikacją miejską
-              </p>
             </div>
             
             <div className="space-y-6 mb-6">
