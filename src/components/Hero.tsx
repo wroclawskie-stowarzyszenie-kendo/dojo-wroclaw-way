@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-dojo.jpg";
+const heroImage = "/lovable-uploads/2839045b-36eb-4dd1-abf1-d4441bddf593.png";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
