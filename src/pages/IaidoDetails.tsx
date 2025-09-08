@@ -201,25 +201,28 @@ const IaidoDetails = () => {
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
                       src="/lovable-uploads/e4113638-9cef-487f-ae49-46982d467b14.png" 
-                      alt="Wiesław Biel"
-                      className="w-full h-full object-cover object-[50%_12%] scale-150 origin-top"
+                      alt="Michał Szczepański"
+                      className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="font-zen font-medium text-accent mb-2">Wiesław Biel</h4>
+                  <h4 className="font-zen font-medium text-accent mb-2">Michał Szczepański</h4>
                   <p className="text-muted-foreground">Renshi 6 dan Iaido</p>
-                  <p className="text-sm text-muted-foreground mt-1">Główny trener</p>
+                  <p className="text-muted-foreground">6 dan Jodo</p>
+                  <p className="text-sm text-muted-foreground mt-1">Sekretarz Generalny PZK</p>
                 </div>
                 
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src="/lovable-uploads/1da545e7-8ad0-4aa9-9b2a-c9b6a1a87bc9.png" 
-                      alt="Krzysztof Belczyk"
+                      src="/lovable-uploads/b8b1f47f-62df-4931-a8c0-4f866e8a4c84.png" 
+                      alt="Agnieszka Krawczyk"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="font-zen font-medium text-accent mb-2">Krzysztof Belczyk</h4>
-                  <p className="text-muted-foreground">2 dan Iaido</p>
+                  <h4 className="font-zen font-medium text-accent mb-2">Agnieszka Krawczyk</h4>
+                  <p className="text-muted-foreground">4 dan Iaido</p>
+                  <p className="text-muted-foreground">4 dan Jodo</p>
+                  <p className="text-sm text-muted-foreground mt-1">Członek Komisji Jodo PZK</p>
                 </div>
               </div>
             </CardContent>
