@@ -35,7 +35,7 @@ const DisciplineCard = ({ title, japanese, description, image, contact, delay = 
 
         <div className="space-y-3 pt-4 border-t border-border">
           <div className="text-center">
-            <p className="text-sm text-muted-foreground">Instruktor</p>
+            <p className="text-sm text-muted-foreground">Kontakt telefoniczny</p>
             <p className="font-zen font-medium text-accent">{contact.name}</p>
             <p className="text-sm text-muted-foreground font-mono">{contact.phone}</p>
           </div>
