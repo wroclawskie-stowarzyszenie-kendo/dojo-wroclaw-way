@@ -138,11 +138,11 @@ const Contact = () => {
                   <div className="bg-gradient-subtle rounded-lg p-4 space-y-2">
                     <p className="font-zen font-medium text-accent mb-2">Ola</p>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-                      <Phone className="w-4 h-4" />
+                      <Phone className="w-4 h-4 flex-shrink-0" />
                       <span className="font-mono text-sm">+48 798 416 649</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-                      <Mail className="w-4 h-4" />
+                      <Mail className="w-4 h-4 flex-shrink-0" />
                       <span className="text-sm">kendowroc@audiobiel.pl</span>
                     </div>
                   </div>
@@ -173,11 +173,11 @@ const Contact = () => {
                   <div className="bg-gradient-subtle rounded-lg p-4 space-y-2">
                     <p className="font-zen font-medium text-accent mb-2">Michał</p>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-                      <Phone className="w-4 h-4" />
+                      <Phone className="w-4 h-4 flex-shrink-0" />
                       <span className="font-mono text-sm">+48 602 738 234</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-                      <Mail className="w-4 h-4" />
+                      <Mail className="w-4 h-4 flex-shrink-0" />
                       <span className="text-sm">wsk.iaido.jodo@gmail.com</span>
                     </div>
                   </div>
