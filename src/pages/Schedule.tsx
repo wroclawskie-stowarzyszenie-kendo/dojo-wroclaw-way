@@ -99,8 +99,8 @@ const Schedule = () => {
               </p>
             </div>
 
-            <Card className="p-8 bg-gradient-subtle border-border">
-              <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant bg-card" style={{ minHeight: '600px' }}>
+            <Card className="p-4 bg-gradient-subtle border-border">
+              <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant bg-card" style={{ minHeight: '700px' }}>
                 <iframe
                   src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FWarsaw&bgcolor=%23ffffff&src=Y19iMDgxYTFlNTY3MGY5MDVmZjNlMGVlOGNiODFlOTMyNGFhM2NlOGJhYWYxYjYyODVlM2QyNmVhMDRjYmI2ODgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000&mode=MONTH&showWeekends=false"
                   width="100%"
@@ -121,9 +121,6 @@ const Schedule = () => {
                 <h3 className="text-3xl font-zen font-medium text-soft-white">
                   Lokalizacja Dojo
                 </h3>
-                <p className="text-lg text-muted-foreground">
-                  Nasze treningi odbywają się w nowoczesnej sali gimnastycznej z pełnym wyposażeniem do japońskich sztuk walki.
-                </p>
               </div>
 
               <div className="space-y-6">
@@ -189,12 +186,12 @@ const Schedule = () => {
               </div>
             </div>
 
-            <Card className="p-8 bg-gradient-subtle border-border">
-              <div className="space-y-6">
+            <Card className="p-4 bg-gradient-subtle border-border">
+              <div className="space-y-4">
                 <h4 className="text-2xl font-zen font-medium text-soft-white text-center">
                   Mapa Lokalizacji
                 </h4>
-                <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant" style={{ minHeight: '500px' }}>
+                <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant" style={{ minHeight: '600px' }}>
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.4!2d17.031645!3d51.119867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc277a8b6c4e5%3A0x1234567890abcdef!2sKolista%2017%2C%2054-152%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1640995200000"
                     width="100%"
@@ -222,19 +219,19 @@ const Schedule = () => {
               
               <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
                 <div className="space-y-4">
-                  <h4 className="font-zen font-medium text-accent">Wyposażenie</h4>
+                  <h4 className="font-zen font-medium text-accent">Wyposażenie i Udogodnienia</h4>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
-                      <span>Profesjonalne maty tatami</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
-                      <span>Szatnie z prysznicami</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
                       <span>Wyposażenie treningowe dostępne</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                      <span>Pierwszy trening bezpłatny</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                      <span>Instruktaż dla początkujących</span>
                     </li>
                   </ul>
                 </div>
@@ -244,15 +241,15 @@ const Schedule = () => {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
-                      <span>Pierwszy trening bezpłatny</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
-                      <span>Instruktaż dla początkujących</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
                       <span>Brak wymagań wstępnych</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                      <span>Przyjazna atmosfera</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                      <span>Doświadczeni instruktorzy</span>
                     </li>
                   </ul>
                 </div>
