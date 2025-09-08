@@ -43,6 +43,12 @@ const Navigation = () => {
             >
               Kontakt
             </button>
+            <a 
+              href="/oplaty"
+              className="text-sm font-zen text-muted-foreground hover:text-accent transition-fast"
+            >
+              Opłaty
+            </a>
             <Button 
               variant="outline" 
               size="sm"

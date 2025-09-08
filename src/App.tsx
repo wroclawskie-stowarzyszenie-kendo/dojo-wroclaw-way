@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import KendoDetails from "./pages/KendoDetails";
 import IaidoDetails from "./pages/IaidoDetails";
 import JodoDetails from "./pages/JodoDetails";
+import Fees from "./pages/Fees";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/kendo" element={<KendoDetails />} />
           <Route path="/iaido" element={<IaidoDetails />} />
           <Route path="/jodo" element={<JodoDetails />} />
+          <Route path="/oplaty" element={<Fees />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
