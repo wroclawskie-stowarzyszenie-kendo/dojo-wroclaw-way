@@ -1,6 +1,6 @@
 import DisciplineCard from "./DisciplineCard";
 const kendoImage = "/lovable-uploads/6edaffac-144e-4463-8688-9e3589141853.png";
-import iaidoImage from "@/assets/iaido-practice.jpg";
+const iaidoImage = "/lovable-uploads/92ea975f-2733-419c-97ed-70fe82781b1d.png";
 const jodoImage = "/lovable-uploads/91b520b0-fce2-4f76-844a-29eda609251c.png";
 
 const Disciplines = () => {
