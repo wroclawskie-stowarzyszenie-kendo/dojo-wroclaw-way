@@ -27,8 +27,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <span className="text-2xl font-zen font-light text-crimson">武道館</span>
-            <span className="text-sm font-zen text-muted-foreground">Wrocław</span>
+            <img src="/lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png" alt="WSK Logo" className="h-10 w-10" />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
