@@ -196,18 +196,33 @@ const JodoDetails = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="grid md:grid-cols-1 gap-6 justify-center">
+              <div className="grid md:grid-cols-2 gap-6">
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src="/lovable-uploads/e4113638-9cef-487f-ae49-46982d467b14.png" 
-                      alt="Wiesław Biel"
-                      className="w-full h-full object-cover object-[50%_12%] scale-150 origin-top"
+                      src="/lovable-uploads/56bf4c8f-ade9-46d6-bed4-4c86e8497d5b.png" 
+                      alt="Michał Szczepański"
+                      className="w-full h-full object-cover"
                     />
                   </div>
-                  <h4 className="font-zen font-medium text-accent mb-2">Wiesław Biel</h4>
-                  <p className="text-muted-foreground">Renshi 6 dan Jodo</p>
-                  <p className="text-sm text-muted-foreground mt-1">Główny trener</p>
+                  <h4 className="font-zen font-medium text-accent mb-2">Michał Szczepański</h4>
+                  <p className="text-muted-foreground">Renshi 6 dan Iaido</p>
+                  <p className="text-muted-foreground">6 dan Jodo</p>
+                  <p className="text-sm text-muted-foreground mt-1">Sekretarz Generalny PZK</p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/0ee7bb5c-3699-44e8-8846-29d30de453ad.png" 
+                      alt="Agnieszka Krawczyk"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="font-zen font-medium text-accent mb-2">Agnieszka Krawczyk</h4>
+                  <p className="text-muted-foreground">4 dan Iaido</p>
+                  <p className="text-muted-foreground">4 dan Jodo</p>
+                  <p className="text-sm text-muted-foreground mt-1">Członek Komisji Jodo PZK</p>
                 </div>
               </div>
             </CardContent>

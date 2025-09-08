@@ -200,7 +200,7 @@ const IaidoDetails = () => {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src="/lovable-uploads/e4113638-9cef-487f-ae49-46982d467b14.png" 
+                      src="/lovable-uploads/56bf4c8f-ade9-46d6-bed4-4c86e8497d5b.png" 
                       alt="Michał Szczepański"
                       className="w-full h-full object-cover"
                     />
@@ -214,7 +214,7 @@ const IaidoDetails = () => {
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src="/lovable-uploads/b8b1f47f-62df-4931-a8c0-4f866e8a4c84.png" 
+                      src="/lovable-uploads/0ee7bb5c-3699-44e8-8846-29d30de453ad.png" 
                       alt="Agnieszka Krawczyk"
                       className="w-full h-full object-cover"
                     />
