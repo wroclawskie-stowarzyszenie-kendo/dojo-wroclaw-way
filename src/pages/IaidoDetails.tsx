@@ -31,9 +31,9 @@ const IaidoDetails = () => {
       <section 
         className="pt-6 pb-12 px-6 relative overflow-hidden"
         style={{
-          backgroundImage: `url(/lovable-uploads/42fd5a79-57c6-41d5-8fe7-04aec3c4f00d.png)`,
-          backgroundSize: '120%',
-          backgroundPosition: 'center top',
+          backgroundImage: `url(/lovable-uploads/04703146-1df9-4e3f-841c-91831fe3073b.png)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center bottom',
           backgroundRepeat: 'no-repeat'
         }}
       >
