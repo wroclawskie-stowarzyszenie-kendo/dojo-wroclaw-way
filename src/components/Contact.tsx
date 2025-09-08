@@ -15,30 +15,6 @@ const Contact = () => {
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
             Odkryj tradycyjne japońskie sztuki walki w sercu Wrocławia
           </p>
-          
-          <div className="bg-gradient-subtle rounded-3xl p-12 border border-border">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              <div className="text-center">
-                <div className="text-4xl font-zen text-crimson mb-4">📅</div>
-                <h3 className="text-xl font-zen font-medium mb-2 text-soft-white">Start Sezonu</h3>
-                <p className="text-muted-foreground">15 września 2025</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-zen text-indigo mb-4">🚪</div>
-                <h3 className="text-xl font-zen font-medium mb-2 text-soft-white">Nabór Otwarty</h3>
-                <p className="text-muted-foreground">Cały rok</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-zen text-accent mb-4">🎯</div>
-                <h3 className="text-xl font-zen font-medium mb-2 text-soft-white">Pierwszy Trening</h3>
-                <p className="text-muted-foreground">Bezpłatny</p>
-              </div>
-            </div>
-            
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4 shadow-crimson hover:shadow-indigo">
-              Zapisz się na Bezpłatny Trening
-            </Button>
-          </div>
         </div>
 
         {/* Training Schedule & Location */}
@@ -48,11 +24,30 @@ const Contact = () => {
           <div className="bg-gradient-subtle rounded-2xl p-8 border border-border">
             <div className="text-center mb-6">
               <h3 className="text-2xl font-zen font-medium mb-4 text-soft-white">
-                Harmonogram Treningów
+                Harmonogram Treningów - Sezon 2025/2026
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-6">
                 Sprawdź terminarz zawodów, seminariów i wydarzeń specjalnych
               </p>
+              
+              {/* Season Info Cards */}
+              <div className="grid md:grid-cols-3 gap-4 mb-8">
+                <div className="bg-card rounded-lg p-4 border border-border">
+                  <div className="text-2xl font-zen text-crimson mb-2">📅</div>
+                  <h4 className="font-zen font-medium text-accent mb-1">Start Sezonu</h4>
+                  <p className="text-sm text-muted-foreground">15 września 2025</p>
+                </div>
+                <div className="bg-card rounded-lg p-4 border border-border">
+                  <div className="text-2xl font-zen text-indigo mb-2">🚪</div>
+                  <h4 className="font-zen font-medium text-accent mb-1">Nabór Otwarty</h4>
+                  <p className="text-sm text-muted-foreground">Cały rok</p>
+                </div>
+                <div className="bg-card rounded-lg p-4 border border-border">
+                  <div className="text-2xl font-zen text-accent mb-2">🎯</div>
+                  <h4 className="font-zen font-medium text-accent mb-1">Pierwszy Trening</h4>
+                  <p className="text-sm text-muted-foreground">Bezpłatny</p>
+                </div>
+              </div>
             </div>
             <div className="relative">
               <div className="aspect-video rounded-lg overflow-hidden border border-border shadow-elegant bg-card">
