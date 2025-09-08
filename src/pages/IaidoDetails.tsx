@@ -15,8 +15,8 @@ const IaidoDetails = () => {
         className="pt-24 pb-12 px-6 relative overflow-hidden"
         style={{
           backgroundImage: `url(/lovable-uploads/42fd5a79-57c6-41d5-8fe7-04aec3c4f00d.png)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: '120%',
+          backgroundPosition: '50% 20%',
           backgroundRepeat: 'no-repeat'
         }}
       >

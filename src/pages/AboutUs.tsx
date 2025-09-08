@@ -36,8 +36,8 @@ const AboutUs = () => {
             className="relative text-center space-y-6 py-24 px-8 rounded-2xl overflow-hidden"
             style={{
               backgroundImage: `url(/lovable-uploads/42fd5a79-57c6-41d5-8fe7-04aec3c4f00d.png)`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+              backgroundSize: '120%',
+              backgroundPosition: '50% 20%',
               backgroundRepeat: 'no-repeat'
             }}
           >
