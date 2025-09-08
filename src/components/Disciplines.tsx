@@ -1,5 +1,5 @@
 import DisciplineCard from "./DisciplineCard";
-import kendoImage from "@/assets/kendo-practice.jpg";
+const kendoImage = "/lovable-uploads/6edaffac-144e-4463-8688-9e3589141853.png";
 import iaidoImage from "@/assets/iaido-practice.jpg";
 import jodoImage from "@/assets/jodo-practice.jpg";
 
