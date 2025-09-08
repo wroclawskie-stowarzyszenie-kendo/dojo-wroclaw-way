@@ -135,19 +135,31 @@ const Contact = () => {
                 <div className="text-3xl font-zen text-crimson group-hover:scale-110 transition-transform">剣道</div>
                 <h4 className="text-xl font-zen font-medium">Kendo</h4>
                 <div className="space-y-3 flex-1 flex flex-col justify-end">
-                  <div className="bg-gradient-subtle rounded-lg p-4">
+                  <div className="bg-gradient-subtle rounded-lg p-4 space-y-2">
                     <p className="font-zen font-medium text-accent mb-2">Ola</p>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
                       <Phone className="w-4 h-4" />
                       <span className="font-mono text-sm">+48 798 416 649</span>
                     </div>
+                    <div className="flex items-center justify-center space-x-2 text-muted-foreground">
+                      <Mail className="w-4 h-4" />
+                      <span className="text-sm">kendowroc@audiobiel.pl</span>
+                    </div>
                   </div>
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="tel:+48798416649">
-                      <Phone className="w-4 h-4 mr-2" />
-                      Zadzwoń
-                    </a>
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button variant="outline" className="flex-1" asChild>
+                      <a href="tel:+48798416649">
+                        <Phone className="w-4 h-4 mr-2" />
+                        Zadzwoń
+                      </a>
+                    </Button>
+                    <Button variant="outline" className="flex-1" asChild>
+                      <a href="mailto:kendowroc@audiobiel.pl">
+                        <Mail className="w-4 h-4 mr-2" />
+                        Email
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -158,19 +170,31 @@ const Contact = () => {
                 <div className="text-3xl font-zen text-indigo group-hover:scale-110 transition-transform">居合道 • 杖道</div>
                 <h4 className="text-xl font-zen font-medium">Iaido & Jodo</h4>
                 <div className="space-y-3 flex-1 flex flex-col justify-end">
-                  <div className="bg-gradient-subtle rounded-lg p-4">
+                  <div className="bg-gradient-subtle rounded-lg p-4 space-y-2">
                     <p className="font-zen font-medium text-accent mb-2">Michał</p>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
                       <Phone className="w-4 h-4" />
                       <span className="font-mono text-sm">+48 602 738 234</span>
                     </div>
+                    <div className="flex items-center justify-center space-x-2 text-muted-foreground">
+                      <Mail className="w-4 h-4" />
+                      <span className="text-sm">wsk.iaido.jodo@gmail.com</span>
+                    </div>
                   </div>
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="tel:+48602738234">
-                      <Phone className="w-4 h-4 mr-2" />
-                      Zadzwoń
-                    </a>
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button variant="outline" className="flex-1" asChild>
+                      <a href="tel:+48602738234">
+                        <Phone className="w-4 h-4 mr-2" />
+                        Zadzwoń
+                      </a>
+                    </Button>
+                    <Button variant="outline" className="flex-1" asChild>
+                      <a href="mailto:wsk.iaido.jodo@gmail.com">
+                        <Mail className="w-4 h-4 mr-2" />
+                        Email
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -183,12 +207,12 @@ const Contact = () => {
                 <div className="space-y-3 flex-1 flex flex-col justify-end">
                   <div className="bg-gradient-subtle rounded-lg p-4 space-y-2">
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-                      <Mail className="w-4 h-4" />
+                      <Mail className="w-4 h-4 flex-shrink-0" />
                       <span className="text-sm">wsk@kendo.wroclaw.pl</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-                      <MapPin className="w-4 h-4" />
-                      <span className="text-sm">ul. Stanisławowska 47, 54-611 Wrocław</span>
+                      <MapPin className="w-4 h-4 flex-shrink-0" />
+                      <span className="text-sm text-center">ul. Stanisławowska 47, 54-611 Wrocław</span>
                     </div>
                   </div>
                   <Button variant="outline" className="w-full" asChild>
