@@ -128,7 +128,7 @@ const Footer = () => {
               </a>
               
               <a 
-                href="https://www.youtube.com/channel/UC-bNyJr6YtZ2HJebs7NjQHg" 
+                href="https://www.instagram.com/kendo_wroclaw/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group flex items-center justify-center w-8 h-8 hover:scale-105 transition-smooth"
@@ -142,7 +142,7 @@ const Footer = () => {
               </a>
               
               <a 
-                href="https://www.instagram.com/kendo_wroclaw/" 
+                href="https://www.youtube.com/channel/UC-bNyJr6YtZ2HJebs7NjQHg" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group flex items-center justify-center w-8 h-8 hover:scale-105 transition-smooth"
