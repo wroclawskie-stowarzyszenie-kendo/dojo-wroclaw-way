@@ -109,10 +109,10 @@ const Contact = () => {
         <div className="bg-gradient-subtle rounded-2xl p-8 border border-border">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-zen font-medium mb-4 text-soft-white">
-              Skontaktuj się z Instruktorami
+              Kontakt do Dyscyplin
             </h3>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Każda dyscyplina ma dedykowanego instruktora gotowego odpowiedzieć na Twoje pytania
+              Każda dyscyplina ma dedykowaną osobę kontaktową gotową odpowiedzieć na Twoje pytania
             </p>
           </div>
 
@@ -124,7 +124,7 @@ const Contact = () => {
                 <h4 className="text-xl font-zen font-medium">Kendo</h4>
                 <div className="space-y-3">
                   <div className="bg-gradient-subtle rounded-lg p-4">
-                    <p className="font-zen font-medium text-accent mb-2">Instruktor Ola</p>
+                    <p className="font-zen font-medium text-accent mb-2">Ola</p>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
                       <Phone className="w-4 h-4" />
                       <span className="font-mono text-sm">+48 798 416 649</span>
@@ -147,7 +147,7 @@ const Contact = () => {
                 <h4 className="text-xl font-zen font-medium">Iaido & Jodo</h4>
                 <div className="space-y-3">
                   <div className="bg-gradient-subtle rounded-lg p-4">
-                    <p className="font-zen font-medium text-accent mb-2">Instruktor Michał</p>
+                    <p className="font-zen font-medium text-accent mb-2">Michał</p>
                     <div className="flex items-center justify-center space-x-2 text-muted-foreground">
                       <Phone className="w-4 h-4" />
                       <span className="font-mono text-sm">+48 602 738 234</span>
