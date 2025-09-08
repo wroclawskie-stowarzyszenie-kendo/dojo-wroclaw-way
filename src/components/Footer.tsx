@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -109,13 +110,29 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-sm text-muted-foreground">
-            © 2025 Wrocławskie Stowarzyszenie Kendo. Wszystkie prawa zastrzeżone.
-          </p>
-          <p className="text-xs text-muted-foreground mt-2 font-zen">
-            橋の都 • Miasto Mostów • Wrocław
-          </p>
+        <div className="border-t border-border mt-8 pt-8 relative">
+          <div className="flex justify-between items-center">
+            <a 
+              href="https://www.facebook.com/WSKendo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full transition-smooth group"
+              aria-label="Facebook WSK"
+            >
+              <Facebook className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
+            </a>
+            
+            <div className="text-center flex-1">
+              <p className="text-sm text-muted-foreground">
+                © 2025 Wrocławskie Stowarzyszenie Kendo. Wszystkie prawa zastrzeżone.
+              </p>
+              <p className="text-xs text-muted-foreground mt-2 font-zen">
+                橋の都 • Miasto Mostów • Wrocław
+              </p>
+            </div>
+            
+            <div className="w-10"></div> {/* Spacer for balance */}
+          </div>
         </div>
       </div>
     </footer>
