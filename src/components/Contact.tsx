@@ -80,28 +80,56 @@ const Contact = () => {
           </Card>
         </div>
 
-        {/* Call to Action with Map */}
-        <div className="bg-gradient-subtle rounded-2xl p-8 border border-border">
+        {/* New Season Information */}
+        <div className="bg-gradient-subtle rounded-2xl p-8 border border-border mb-8">
+          <div className="text-center">
+            <h3 className="text-3xl font-zen font-medium mb-4 text-soft-white">
+              Sezon 2025/2026
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6 mb-6">
+              <div className="bg-card rounded-lg p-6 border border-border">
+                <div className="text-2xl font-zen text-crimson mb-2">📅</div>
+                <h4 className="font-zen font-medium mb-2">Start Treningów</h4>
+                <p className="text-sm text-muted-foreground">15 września 2024</p>
+              </div>
+              <div className="bg-card rounded-lg p-6 border border-border">
+                <div className="text-2xl font-zen text-indigo mb-2">🚪</div>
+                <h4 className="font-zen font-medium mb-2">Nabór Otwarty</h4>
+                <p className="text-sm text-muted-foreground">Zapisujemy przez cały rok</p>
+              </div>
+              <div className="bg-card rounded-lg p-6 border border-border">
+                <div className="text-2xl font-zen text-accent mb-2">🎯</div>
+                <h4 className="font-zen font-medium mb-2">Wszystkie Poziomy</h4>
+                <p className="text-sm text-muted-foreground">Od początkujących do zaawansowanych</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Location and Map */}
+        <div className="bg-gradient-subtle rounded-2xl p-8 border border-border mb-8">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="text-center lg:text-left">
               <h3 className="text-2xl font-zen font-medium mb-4 text-soft-white">
-                Gotowy na Rozpoczęcie Treningu?
+                Lokalizacja Treningów
               </h3>
-              <p className="text-muted-foreground mb-6">
-                Dołącz do naszej społeczności sztuk walki i odkryj głębokie korzyści japońskich sztuk miecza. 
-                Zapraszamy wszystkie poziomy - od kompletnych początkujących do doświadczonych praktyków.
-              </p>
-              <div className="space-y-3 mb-6">
-                <p className="text-sm font-medium text-accent">Lokalizacja treningów:</p>
-                <p className="text-sm text-muted-foreground">
-                  Szkoła Podstawowa nr 33<br />
-                  ul. Kolista 17<br />
-                  Wrocław
-                </p>
+              <div className="space-y-4 mb-6">
+                <div className="bg-card rounded-lg p-4 border border-border">
+                  <p className="text-sm font-medium text-accent mb-2">Adres:</p>
+                  <p className="text-sm text-muted-foreground">
+                    Szkoła Podstawowa nr 33<br />
+                    ul. Kolista 17<br />
+                    54-152 Wrocław
+                  </p>
+                </div>
+                <div className="bg-card rounded-lg p-4 border border-border">
+                  <p className="text-sm font-medium text-accent mb-2">Dojazd:</p>
+                  <p className="text-sm text-muted-foreground">
+                    Autobusy: 106, 107, 109<br />
+                    Parking dostępny na terenie szkoły
+                  </p>
+                </div>
               </div>
-              <Button variant="hero" size="lg" className="shadow-crimson hover:shadow-indigo">
-                Umów Bezpłatny Trening
-              </Button>
             </div>
             <div className="relative">
               <div className="aspect-video rounded-lg overflow-hidden border border-border shadow-elegant">
@@ -118,6 +146,45 @@ const Contact = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Calendar Section */}
+        <div className="bg-gradient-subtle rounded-2xl p-8 border border-border mb-8">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl font-zen font-medium mb-4 text-soft-white">
+              Kalendarz Treningów
+            </h3>
+            <p className="text-muted-foreground">
+              Sprawdź harmonogram treningów, zawodów i seminariów na nadchodzący sezon
+            </p>
+          </div>
+          <div className="relative">
+            <div className="aspect-video rounded-lg overflow-hidden border border-border shadow-elegant bg-card">
+              <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FWarsaw&bgcolor=%23ffffff&src=Y19iMDgxYTFlNTY3MGY5MDVmZjNlMGVlOGNiODFlOTMyNGFhM2NlOGJhYWYxYjYyODVlM2QyNmVhMDRjYmI2ODgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                title="Kalendarz treningów WSK Wrocław"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="bg-gradient-subtle rounded-2xl p-8 border border-border text-center">
+          <h3 className="text-2xl font-zen font-medium mb-4 text-soft-white">
+            Gotowy na Rozpoczęcie Treningu?
+          </h3>
+          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+            Dołącz do naszej społeczności sztuk walki i odkryj głębokie korzyści japońskich sztuk miecza. 
+            Zapraszamy wszystkie poziomy - od kompletnych początkujących do doświadczonych praktyków.
+          </p>
+          <Button variant="hero" size="lg" className="shadow-crimson hover:shadow-indigo">
+            Umów Bezpłatny Trening
+          </Button>
         </div>
       </div>
     </section>
