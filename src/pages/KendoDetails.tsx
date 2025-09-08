@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, HelpCircle, BookOpen } from "lucide-react";
+import { ArrowLeft, Users, Coins, HelpCircle, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -128,6 +128,7 @@ const KendoDetails = () => {
           <Card className="border-border hover:border-crimson transition-smooth">
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-crimson">
+                <Coins className="w-6 h-6" />
                 Opłaty
               </CardTitle>
             </CardHeader>
@@ -194,7 +195,8 @@ const KendoDetails = () => {
           {/* Trenerzy */}
           <Card className="border-border hover:border-crimson transition-smooth">
             <CardHeader>
-              <CardTitle className="text-crimson">
+              <CardTitle className="flex items-center gap-3 text-crimson">
+                <Users className="w-6 h-6" />
                 Trenerzy Kendo
               </CardTitle>
             </CardHeader>
