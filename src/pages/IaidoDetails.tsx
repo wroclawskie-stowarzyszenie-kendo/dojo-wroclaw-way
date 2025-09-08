@@ -86,7 +86,7 @@ const IaidoDetails = () => {
                 
                 <div>
                   <h4 className="font-zen font-medium text-accent mb-2">3. Co muszę mieć na pierwszy trening?</h4>
-                  <p className="text-foreground">Na początek wystarczy Ci strój sportowy (koszulka i spodnie dresowe) oraz dobre chęci. Przez pierwszy miesiąc nie musisz martwić się o sprzęt – klub udostępnia miecz treningowy bezpłatnie.</p>
+                  <p className="text-foreground">Na początek wystarczy Ci strój sportowy (koszulka i spodnie dresowe) oraz dobre chęci. Przez kilka pierwszych miesięcy nie musisz martwić się o sprzęt – klub udostępnia wszystko co jest potrzebne bezpłatnie.</p>
                 </div>
                 
                 <div>
