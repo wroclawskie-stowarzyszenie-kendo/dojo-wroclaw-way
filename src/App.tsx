@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
+import AboutUs from "./pages/AboutUs";
 import KendoDetails from "./pages/KendoDetails";
 import IaidoDetails from "./pages/IaidoDetails";
 import JodoDetails from "./pages/JodoDetails";
@@ -23,6 +24,7 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/o-nas" element={<AboutUs />} />
           <Route path="/kendo" element={<KendoDetails />} />
           <Route path="/iaido" element={<IaidoDetails />} />
           <Route path="/jodo" element={<JodoDetails />} />

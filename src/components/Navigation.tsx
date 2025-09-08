@@ -40,6 +40,12 @@ const Navigation = () => {
               Dyscypliny
             </button>
             <a 
+              href="/o-nas"
+              className="text-sm font-zen text-muted-foreground hover:text-indigo transition-fast"
+            >
+              O nas
+            </a>
+            <a 
               href="/harmonogram"
               className="text-sm font-zen text-muted-foreground hover:text-indigo transition-fast"
             >
