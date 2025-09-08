@@ -128,20 +128,6 @@ const Footer = () => {
               </a>
               
               <a 
-                href="https://www.instagram.com/kendo_wroclaw/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group flex items-center justify-center w-8 h-8 hover:scale-105 transition-smooth"
-                aria-label="Instagram WSK"
-              >
-                <img 
-                  src="/lovable-uploads/2c1ba0c1-711c-4f41-9d27-f1911549936d.png" 
-                  alt="Instagram" 
-                  className="w-8 h-8 group-hover:opacity-80 transition-opacity"
-                />
-              </a>
-              
-              <a 
                 href="https://www.youtube.com/channel/UC-bNyJr6YtZ2HJebs7NjQHg" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -151,6 +137,20 @@ const Footer = () => {
                 <img 
                   src="/lovable-uploads/5d14cac4-93d7-404d-8a81-f4561f85f44c.png" 
                   alt="YouTube" 
+                  className="w-8 h-8 group-hover:opacity-80 transition-opacity"
+                />
+              </a>
+              
+              <a 
+                href="https://www.instagram.com/kendo_wroclaw/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center w-8 h-8 hover:scale-105 transition-smooth"
+                aria-label="Instagram WSK"
+              >
+                <img 
+                  src="/lovable-uploads/2c1ba0c1-711c-4f41-9d27-f1911549936d.png" 
+                  alt="Instagram" 
                   className="w-8 h-8 group-hover:opacity-80 transition-opacity"
                 />
               </a>
