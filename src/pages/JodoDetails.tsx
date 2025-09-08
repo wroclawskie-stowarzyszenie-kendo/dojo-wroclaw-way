@@ -101,7 +101,7 @@ const JodoDetails = () => {
                     <ul className="list-disc list-inside ml-4 space-y-1">
                       <li><strong>Sprzęt początkowy:</strong> Na początku potrzebujesz tylko stroju sportowego, a kij dostaniesz w klubie.</li>
                       <li><strong>Strój do Jodo:</strong> Tradycyjny strój (keiko-gi i hakama) to wydatek rzędu 250-300 zł, ale nie jest wymagany na początku.</li>
-                      <li><strong>Kij treningowy:</strong> Własny kij (jo) to koszt około 80-150 zł i wystarczy na lata.</li>
+                      <li><strong>Kij treningowy:</strong> Własny kij (jo) to koszt około 200 zł i wystarczy na lata.</li>
                     </ul>
                   </div>
                 </div>
