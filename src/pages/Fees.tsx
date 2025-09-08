@@ -248,18 +248,20 @@ const Fees = () => {
 
           {/* Contact Section */}
           <Card className="p-8 bg-gradient-subtle border-border text-center">
-            <div className="space-y-4">
+            <div className="space-y-8">
               <h3 className="text-2xl font-zen font-medium text-soft-white">
                 Pytania o opłaty?
               </h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 W przypadku pytań dotyczących opłat, skontaktuj się z odpowiednimi osobami kontaktowymi dla swojej dyscypliny
               </p>
-              <Link to="/#contact">
-                <Button variant="outline" className="border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground px-8 py-3">
-                  Przejdź do kontaktu
-                </Button>
-              </Link>
+              <div className="pt-6">
+                <Link to="/#contact">
+                  <Button variant="outline" className="border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground px-8 py-3">
+                    Przejdź do kontaktu
+                  </Button>
+                </Link>
+              </div>
             </div>
           </Card>
 
