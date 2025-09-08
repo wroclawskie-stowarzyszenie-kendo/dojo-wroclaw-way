@@ -81,7 +81,7 @@ const JodoDetails = () => {
                 
                 <div>
                   <h4 className="font-zen font-medium text-accent mb-2">2. Jakie dokumenty są potrzebne?</h4>
-                  <p className="text-foreground">Na pierwszy trening potrzebujesz jedynie zgody rodzica/opiekuna (w przypadku osób niepełnoletnich). Resztę dokumentów, takich jak deklaracja członkowska i zaświadczenie od lekarza sportowego, możesz dostarczyć w ciągu kilku kolejnych tygodni.</p>
+                  <p className="text-foreground">Na pierwszy trening potrzebujesz jedynie zgody rodzica/opiekuna (w przypadku osób niepełnoletnich). Deklarację członkowską możesz dostarczyć w ciągu kilku kolejnych tygodni.</p>
                 </div>
                 
                 <div>
@@ -118,7 +118,7 @@ const JodoDetails = () => {
                 
                 <div>
                   <h4 className="font-zen font-medium text-accent mb-2">8. Czy potrzebne są badania lekarskie?</h4>
-                  <p className="text-foreground">Tak, zaświadczenie od lekarza sportowego jest niezbędne do regularnych treningów. Nie potrzebujesz go jednak na pierwsze zajęcia.</p>
+                  <p className="text-foreground">W przypadku Jodo badania lekarskie nie są wymagane do regularnych treningów.</p>
                 </div>
               </div>
             </CardContent>
