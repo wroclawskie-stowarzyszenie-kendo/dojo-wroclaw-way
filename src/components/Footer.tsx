@@ -18,19 +18,6 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               Odkryj drogę miecza. Tradycyjne japońskie sztuki walki we Wrocławiu.
             </p>
-            <div className="flex justify-center pt-2">
-              <a 
-                href="https://www.facebook.com/WSKendo" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center"
-                aria-label="Facebook WSK"
-              >
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo/20 to-crimson/20 border border-border hover:border-indigo transition-smooth flex items-center justify-center group-hover:scale-105">
-                  <Facebook className="w-4 h-4 text-indigo group-hover:text-crimson transition-colors" />
-                </div>
-              </a>
-            </div>
           </div>
 
           {/* Training Locations */}
@@ -123,13 +110,33 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-sm text-muted-foreground">
-            © 2025 Wrocławskie Stowarzyszenie Kendo. Wszystkie prawa zastrzeżone.
-          </p>
-          <p className="text-xs text-muted-foreground mt-2 font-zen">
-            橋の都 • Miasto Mostów • Wrocław
-          </p>
+        <div className="border-t border-border mt-8 pt-8 relative">
+          <div className="flex justify-between items-center">
+            <a 
+              href="https://www.facebook.com/WSKendo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center w-8 h-8 hover:scale-105 transition-smooth"
+              aria-label="Facebook WSK"
+            >
+              <img 
+                src="/lovable-uploads/80b87cb5-8f74-4557-af69-a9f599887fce.png" 
+                alt="Facebook" 
+                className="w-8 h-8 group-hover:opacity-80 transition-opacity"
+              />
+            </a>
+            
+            <div className="text-center flex-1">
+              <p className="text-sm text-muted-foreground">
+                © 2025 Wrocławskie Stowarzyszenie Kendo. Wszystkie prawa zastrzeżone.
+              </p>
+              <p className="text-xs text-muted-foreground mt-2 font-zen">
+                橋の都 • Miasto Mostów • Wrocław
+              </p>
+            </div>
+            
+            <div className="w-8"></div> {/* Spacer for balance */}
+          </div>
         </div>
       </div>
     </footer>
