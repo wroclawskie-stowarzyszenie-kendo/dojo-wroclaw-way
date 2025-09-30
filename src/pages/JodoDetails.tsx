@@ -233,7 +233,7 @@ const JodoDetails = () => {
                   </div>
                   <h4 className="font-zen font-medium text-accent mb-2">Michał Szczepański</h4>
                   <p className="text-muted-foreground">Renshi 6 dan Iaido</p>
-                  <p className="text-muted-foreground">6 dan Jodo</p>
+                  <p className="text-muted-foreground">Renshi 6 dan Jodo</p>
                   <p className="text-sm text-muted-foreground mt-1">Sekretarz Generalny PZK</p>
                 </div>
                 
@@ -247,7 +247,7 @@ const JodoDetails = () => {
                   </div>
                   <h4 className="font-zen font-medium text-accent mb-2">Agnieszka Krawczyk</h4>
                   <p className="text-muted-foreground">4 dan Iaido</p>
-                  <p className="text-muted-foreground">4 dan Jodo</p>
+                  <p className="text-muted-foreground">5 dan Jodo</p>
                   <p className="text-sm text-muted-foreground mt-1">Członek Komisji Jodo PZK</p>
                 </div>
               </div>
