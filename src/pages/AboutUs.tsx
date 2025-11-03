@@ -145,7 +145,7 @@ const AboutUs = () => {
                     <Button 
                       variant="outline" 
                       className="w-full" 
-                      onClick={() => window.open("https://drive.google.com/file/d/1BdvkeJ28jz4GCSJ0ZeT7YiSi1DD1gryY/view", "_blank")}
+                      onClick={() => window.open("https://drive.google.com/file/d/1Szf2KlHCtxSzqwQpet8PJ5M8G-c8qloZ/view?usp=sharing", "_blank")}
                     >
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Pobierz Deklarację WSK (PDF)
