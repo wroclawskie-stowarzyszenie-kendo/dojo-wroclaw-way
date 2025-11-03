@@ -1,35 +1,18 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, MapPin, Calendar, Clock, Users, CheckCircle, Info } from "lucide-react";
+import { MapPin, Calendar, Clock, Users, CheckCircle, Info } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { asset } from "@/lib/utils";
 
 const Schedule = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="bg-background/95 backdrop-blur-md border-b border-border shadow-elegant sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link 
-              to="/" 
-              className="flex items-center space-x-3 hover:opacity-80 transition-fast"
-            >
-              <ArrowLeft className="w-5 h-5 text-muted-foreground" />
-              <div className="flex items-center space-x-2">
-                <img src={asset('lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png')} alt="WSK Logo" className="h-8 w-8" />
-                <span className="font-zen font-medium text-soft-white">WSK</span>
-              </div>
-            </Link>
-            <h1 className="text-xl font-zen font-medium text-soft-white">Harmonogram</h1>
-            <div className="w-20"></div> {/* Spacer for balance */}
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Main Content */}
-      <main className="py-12 px-6">
+      <main className="py-12 px-6 pt-20">
         <div className="max-w-7xl mx-auto space-y-16">
           
           {/* Hero Section */}

@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Users, Coins, HelpCircle, BookOpen } from "lucide-react";
+import { Users, Coins, HelpCircle, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { asset } from "@/lib/utils";
 import michalSzczepanski from "@/assets/michal-szczepanski.png";
@@ -10,29 +11,11 @@ import agnieszkaKrawczyk from "@/assets/agnieszka-krawczyk.png";
 const IaidoDetails = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="bg-background/95 backdrop-blur-md border-b border-border shadow-elegant sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link 
-              to="/#disciplines" 
-              className="flex items-center space-x-3 hover:opacity-80 transition-fast"
-            >
-              <ArrowLeft className="w-5 h-5 text-muted-foreground" />
-              <div className="flex items-center space-x-2">
-                <img src={asset('lovable-uploads/a5067aa6-7595-4441-be68-e5c88d4706b8.png')} alt="WSK Logo" className="h-8 w-8" />
-                <span className="font-zen font-medium text-soft-white">WSK</span>
-              </div>
-            </Link>
-            <h1 className="text-xl font-zen font-medium text-soft-white">Iaido</h1>
-            <div className="w-20"></div> {/* Spacer for balance */}
-          </div>
-        </div>
-      </nav>
+      <Navigation />
       
       {/* Hero Section */}
       <section 
-        className="pt-6 pb-12 px-6 relative overflow-hidden"
+        className="pt-24 pb-12 px-6 relative overflow-hidden"
         style={{
           backgroundImage: `url(${asset('lovable-uploads/04703146-1df9-4e3f-841c-91831fe3073b.png')})`,
           backgroundSize: 'cover',

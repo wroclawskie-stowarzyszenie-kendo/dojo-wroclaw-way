@@ -19,15 +19,16 @@ const Navigation = () => {
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If section doesn't exist (we're on a different page), go to home page
+      window.location.href = `/#${sectionId}`;
+    }
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-      isScrolled 
-        ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-elegant' 
-        : 'bg-black/40 backdrop-blur-sm'
-    }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-smooth bg-background/95 backdrop-blur-md border-b border-border shadow-elegant`}>
       <div className="w-full pl-4 pr-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
