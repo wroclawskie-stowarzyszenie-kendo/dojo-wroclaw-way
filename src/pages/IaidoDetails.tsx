@@ -229,7 +229,7 @@ const IaidoDetails = () => {
                     />
                   </div>
                   <h4 className="font-zen font-medium text-accent mb-2">Agnieszka Krawczyk</h4>
-                  <p className="text-muted-foreground">4 dan Iaido</p>
+                  <p className="text-muted-foreground">5 dan Iaido</p>
                   <p className="text-muted-foreground">5 dan Jodo</p>
                   <p className="text-sm text-muted-foreground mt-1">Członek Komisji Jodo PZK</p>
                 </div>
