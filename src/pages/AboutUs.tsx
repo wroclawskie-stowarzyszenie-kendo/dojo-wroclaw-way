@@ -135,6 +135,37 @@ const AboutUs = () => {
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Podanie o dofinansowanie */}
+              <Card className="h-fit">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <ExternalLink className="h-5 w-5" />
+                    Podanie o dofinansowanie
+                  </CardTitle>
+                  <p className="text-sm text-muted-foreground">
+                    Wzór podania o dofinansowanie dla członków WSK
+                  </p>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <p className="text-muted-foreground">
+                      Wypełnione podanie o dofinansowanie należy wysłać na adres e-mail: {" "}
+                      <a href="mailto:zarzad@kendo.wroclaw.pl" className="text-primary hover:underline font-medium">
+                        zarzad@kendo.wroclaw.pl
+                      </a>
+                    </p>
+                    <Button 
+                      variant="outline" 
+                      className="w-full" 
+                      onClick={() => window.open("https://docs.google.com/document/d/1XVLccbMu49o5B1SxbvZaijj3nzKduT9y/edit?usp=sharing&ouid=107916322027017518703&rtpof=true&sd=true", "_blank")}
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Pobierz wzór podania (DOC)
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
