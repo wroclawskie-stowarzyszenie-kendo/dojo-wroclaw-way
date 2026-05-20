@@ -35,7 +35,7 @@ const KendoDetails = () => {
             </h1>
             <p className="text-3xl font-zen font-light text-crimson mb-4">剣道</p>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Droga miecza. Nowoczesna japońska sztuka walki wywodząca się z szermierki, wykorzystująca bambusowe miecze i zbroję.
+              Droga miecza. Japońska sztuka walki wywodząca się z szermierki, wykorzystująca bambusowe miecze i zbroję.
             </p>
           </div>
         </div>

@@ -9,7 +9,7 @@ const Disciplines = () => {
     {
       title: "Kendo",
       japanese: "剣道",
-      description: "Droga miecza. Nowoczesna japońska sztuka walki wywodząca się z szermierki, wykorzystująca bambusowe miecze i zbroję.",
+      description: "Droga miecza. Japońska sztuka walki wywodząca się z szermierki, wykorzystująca bambusowe miecze i zbroję.",
       image: kendoImage,
       contact: {
         name: "Ola",
