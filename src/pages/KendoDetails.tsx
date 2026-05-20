@@ -249,6 +249,18 @@ const KendoDetails = () => {
                   <h4 className="font-zen font-medium text-accent mb-2">Krzysztof Belczyk</h4>
                   <p className="text-muted-foreground">3 dan Kendo</p>
                 </div>
+
+                <div className="text-center">
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src={maciejSzymanskiImg} 
+                      alt="Maciej Szymański"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="font-zen font-medium text-accent mb-2">Maciej Szymański</h4>
+                  <p className="text-muted-foreground">2 dan Kendo</p>
+                </div>
               </div>
             </CardContent>
           </Card>
