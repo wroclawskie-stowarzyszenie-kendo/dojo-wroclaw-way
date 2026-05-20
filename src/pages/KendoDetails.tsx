@@ -255,7 +255,7 @@ const KendoDetails = () => {
                     <img 
                       src={maciejSzymanskiImg} 
                       alt="Maciej Szymański"
-                      className="w-full h-full object-cover object-[50%_85%] scale-110"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <h4 className="font-zen font-medium text-accent mb-2">Maciej Szymański</h4>
