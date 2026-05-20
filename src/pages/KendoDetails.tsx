@@ -8,6 +8,7 @@ import { asset } from "@/lib/utils";
 import wieslawBielImg from "@/assets/wieslaw-biel.png";
 import nataliaMajImg from "@/assets/natalia-maj.png";
 import krzysztofBelczykImg from "@/assets/krzysztof-belczyk.png";
+import maciejSzymanskiImg from "@/assets/maciej-szymanski.jpg";
 
 const KendoDetails = () => {
   return (
