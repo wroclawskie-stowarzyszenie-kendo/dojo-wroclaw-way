@@ -19,7 +19,7 @@ const Disciplines = () => {
     {
       title: "Iaido", 
       japanese: "居合道",
-      description: "Sztuka dobywania miecza. Medytacyjna praktyka skupiająca się na precyzyjnych, płynnych ruchach i dyscyplinie mentalnej.",
+      description: "Sztuka szybkiego dobycia miecza, precyzji ruchu i pełnej kontroli nad ciałem. Iaido to trening techniki, koncentracji i skutecznego działania.",
       image: iaidoImage,
       contact: {
         name: "Michał",
