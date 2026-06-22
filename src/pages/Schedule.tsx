@@ -44,10 +44,10 @@ const Schedule = () => {
             <Card className="p-8 bg-gradient-subtle border-border text-center group hover:shadow-crimson transition-smooth">
               <div className="space-y-4">
                 <div className="text-5xl font-zen text-crimson mb-4 group-hover:scale-110 transition-transform">📅</div>
-                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Start Sezonu</h3>
+                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Sezon Wakacyjny</h3>
                 <div className="space-y-2">
-                  <p className="text-lg font-medium text-accent">15 września 2025</p>
-                  <p className="text-lg text-muted-foreground">18:30</p>
+                  <p className="text-lg font-medium text-accent">Lipiec-Sierpień</p>
+                  <p className="text-lg text-muted-foreground">19:00 - 21:00</p>
                 </div>
                 <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground mt-4">
                   <Calendar className="w-4 h-4" />
@@ -118,7 +118,7 @@ const Schedule = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h3 className="text-3xl font-zen font-medium text-soft-white">
-                  Lokalizacja Dojo
+                  Lokalizacja Dojo - sezon wakacyjny
                 </h3>
               </div>
 
@@ -129,9 +129,9 @@ const Schedule = () => {
                     <div className="space-y-2">
                       <h4 className="text-xl font-zen font-medium text-soft-white">Adres Treningów</h4>
                       <div className="text-muted-foreground space-y-1">
-                        <p className="font-medium">Szkoła Podstawowa nr 33</p>
-                        <p>ul. Kolista 17</p>
-                        <p>54-152 Wrocław</p>
+                        <p className="font-medium">Szkoła Podstawowa nr 44</p>
+                        <p>ul. Wilanowska 31</p>
+                        <p>51-206 Wrocław</p>
                       </div>
                     </div>
                   </div>
@@ -146,27 +146,15 @@ const Schedule = () => {
                         <div className="flex items-center space-x-2">
                           <span className="font-medium">Autobusy:</span>
                           <div className="flex flex-wrap gap-1">
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">101</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">102</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">103</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">104</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">126</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">127</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">152</span>
-                          </div>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <span className="font-medium">Tramwaje:</span>
-                          <div className="flex space-x-2">
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">12</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">18</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">19</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">21</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">121</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">131</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">150</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">D</span>
                           </div>
                         </div>
                         <div className="flex items-center space-x-2">
                           <span className="font-medium">Parking:</span>
-                          <span>Dostępny na terenie szkoły</span>
+                          <span>Dostępny w okolicy</span>
                         </div>
                       </div>
                     </div>
@@ -179,14 +167,10 @@ const Schedule = () => {
                     <div className="space-y-2">
                       <h4 className="text-xl font-zen font-medium text-soft-white">Godziny Treningów</h4>
                       <div className="text-muted-foreground grid grid-cols-1 gap-2 sm:grid-cols-[auto,1fr]">
-                        <div className="font-medium text-crimson">Kendo początkujący:</div>
-                        <div className="sm:text-right">Poniedziałek, Piątek 18:30–19:30</div>
-                        <div className="font-medium text-crimson">Kendo zaawansowani:</div>
-                        <div className="sm:text-right">Poniedziałek, Piątek 18:30–20:30</div>
-                        <div className="font-medium text-indigo">Iaido:</div>
-                        <div className="sm:text-right">Środa 18:30–20:30</div>
-                        <div className="font-medium text-accent">Jodo:</div>
-                        <div className="sm:text-right">Poniedziałek 18:30–20:30</div>
+                        <div className="font-medium text-crimson">Kendo:</div>
+                        <div className="sm:text-right">Poniedziałki 19:00 - 21:00</div>
+                        <div className="font-medium text-indigo">Iaido/Jodo:</div>
+                        <div className="sm:text-right">Wtorki 19:00 - 21:00</div>
                       </div>
                     </div>
                   </div>
@@ -205,14 +189,14 @@ const Schedule = () => {
                 <div className="space-y-4">
                   <div className="rounded-lg overflow-hidden border border-border shadow-elegant" style={{ height: '47vh' }}>
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.4!2d17.031645!3d51.119867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc277a8b6c4e5%3A0x1234567890abcdef!2sKolista%2017%2C%2054-152%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1640995200000"
+                      src="https://www.google.com/maps?q=Szko%C5%82a+Podstawowa+nr+44%2C+ul.+Wilanowska+31%2C+51-206+Wroc%C5%82aw&output=embed"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Lokalizacja treningów - ul. Kolista 17, Wrocław"
+                      title="Lokalizacja treningów - Szkoła Podstawowa nr 44, ul. Wilanowska 31, Wrocław"
                     ></iframe>
                   </div>
                 </div>
