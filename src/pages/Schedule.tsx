@@ -44,10 +44,10 @@ const Schedule = () => {
             <Card className="p-8 bg-gradient-subtle border-border text-center group hover:shadow-crimson transition-smooth">
               <div className="space-y-4">
                 <div className="text-5xl font-zen text-crimson mb-4 group-hover:scale-110 transition-transform">📅</div>
-                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Start Sezonu</h3>
+                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Sezon Wakacyjny</h3>
                 <div className="space-y-2">
-                  <p className="text-lg font-medium text-accent">15 września 2025</p>
-                  <p className="text-lg text-muted-foreground">18:30</p>
+                  <p className="text-lg font-medium text-accent">Lipiec-Sierpień</p>
+                  <p className="text-lg text-muted-foreground">19:00 - 21:00</p>
                 </div>
                 <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground mt-4">
                   <Calendar className="w-4 h-4" />
