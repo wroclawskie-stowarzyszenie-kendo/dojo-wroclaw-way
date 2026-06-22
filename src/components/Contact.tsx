@@ -77,7 +77,7 @@ const Contact = () => {
           <div className="bg-gradient-subtle rounded-2xl p-8 border border-border flex flex-col">
             <div className="text-center mb-6">
               <h3 className="text-2xl font-zen font-medium mb-4 text-soft-white">
-                Lokalizacja Dojo
+                Lokalizacja Dojo - sezon wakacyjny
               </h3>
             </div>
             
@@ -86,9 +86,9 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 mx-auto mb-3 text-accent" />
                 <h4 className="font-zen font-medium mb-2 text-accent">Adres Treningów</h4>
                 <p className="text-muted-foreground">
-                  Szkoła Podstawowa nr 33<br />
-                  ul. Kolista 17<br />
-                  54-152 Wrocław
+                  Szkoła podstawowa nr 44<br />
+                  ul. Wilanowska 31<br />
+                  51-206 Wrocław
                 </p>
               </div>
               
@@ -96,23 +96,22 @@ const Contact = () => {
                 <div className="text-2xl mb-3">🚌</div>
                 <h4 className="font-zen font-medium mb-2 text-accent">Dojazd</h4>
                 <p className="text-muted-foreground">
-                  Autobusy: 101, 102, 103, 104, 126, 127, 152<br />
-                  Tramwaje: 12, 18, 19, 21<br />
-                  Parking na terenie szkoły
+                  Autobusy: 121, 131, 150, D<br />
+                  Parking dostępny w okolicy
                 </p>
               </div>
             </div>
             
             <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant" style={{ minHeight: '400px' }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.4!2d17.031645!3d51.119867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc277a8b6c4e5%3A0x1234567890abcdef!2sKolista%2017%2C%2054-152%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1640995200000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.0!2d17.048611!3d51.091389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc277a8b6c4e5%3A0xabcdef1234567890!2sWilanowska%2031%2C%2051-206%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1640995200000"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Lokalizacja treningów - ul. Kolista 17, Wrocław"
+                title="Lokalizacja treningów - ul. Wilanowska 31, Wrocław"
               ></iframe>
             </div>
           </div>
