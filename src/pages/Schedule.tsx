@@ -118,7 +118,7 @@ const Schedule = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h3 className="text-3xl font-zen font-medium text-soft-white">
-                  Lokalizacja Dojo
+                  Lokalizacja Dojo - sezon wakacyjny
                 </h3>
               </div>
 
@@ -129,9 +129,9 @@ const Schedule = () => {
                     <div className="space-y-2">
                       <h4 className="text-xl font-zen font-medium text-soft-white">Adres Treningów</h4>
                       <div className="text-muted-foreground space-y-1">
-                        <p className="font-medium">Szkoła Podstawowa nr 33</p>
-                        <p>ul. Kolista 17</p>
-                        <p>54-152 Wrocław</p>
+                        <p className="font-medium">Szkoła Podstawowa nr 44</p>
+                        <p>ul. Wilanowska 31</p>
+                        <p>51-206 Wrocław</p>
                       </div>
                     </div>
                   </div>
