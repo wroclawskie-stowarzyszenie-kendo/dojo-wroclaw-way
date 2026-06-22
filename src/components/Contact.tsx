@@ -42,9 +42,9 @@ const Contact = () => {
               <div className="grid md:grid-cols-3 gap-4 mb-8">
                 <div className="bg-card rounded-lg p-4 border border-border">
                   <div className="text-2xl font-zen text-crimson mb-2">📅</div>
-                  <h4 className="font-zen font-medium text-accent mb-1">Start Sezonu</h4>
-                  <p className="text-sm text-muted-foreground">15 września 2025</p>
-                  <p className="text-sm text-muted-foreground">18:30</p>
+                  <h4 className="font-zen font-medium text-accent mb-1">Sezon Wakacyjny</h4>
+                  <p className="text-sm text-muted-foreground">Lipiec-Sierpień</p>
+                  <p className="text-sm text-muted-foreground">19:00 - 21:00</p>
                 </div>
                 <div className="bg-card rounded-lg p-4 border border-border">
                   <div className="text-2xl font-zen text-indigo mb-2">🚪</div>
