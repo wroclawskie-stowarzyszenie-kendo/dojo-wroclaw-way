@@ -167,14 +167,10 @@ const Schedule = () => {
                     <div className="space-y-2">
                       <h4 className="text-xl font-zen font-medium text-soft-white">Godziny Treningów</h4>
                       <div className="text-muted-foreground grid grid-cols-1 gap-2 sm:grid-cols-[auto,1fr]">
-                        <div className="font-medium text-crimson">Kendo początkujący:</div>
-                        <div className="sm:text-right">Poniedziałek, Piątek 18:30–19:30</div>
-                        <div className="font-medium text-crimson">Kendo zaawansowani:</div>
-                        <div className="sm:text-right">Poniedziałek, Piątek 18:30–20:30</div>
-                        <div className="font-medium text-indigo">Iaido:</div>
-                        <div className="sm:text-right">Środa 18:30–20:30</div>
-                        <div className="font-medium text-accent">Jodo:</div>
-                        <div className="sm:text-right">Poniedziałek 18:30–20:30</div>
+                        <div className="font-medium text-crimson">Kendo:</div>
+                        <div className="sm:text-right">Poniedziałki 19:00 - 21:00</div>
+                        <div className="font-medium text-indigo">Iaido/Jodo:</div>
+                        <div className="sm:text-right">Wtorki 19:00 - 21:00</div>
                       </div>
                     </div>
                   </div>
