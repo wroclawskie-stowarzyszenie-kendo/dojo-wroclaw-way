@@ -158,8 +158,8 @@ const Footer = () => {
             </div>
             
             <div className="text-center flex-1">
-              <p className="text-sm text-muted-foreground">
-                © 2025 Wrocławskie Stowarzyszenie Kendo. Wszystkie prawa zastrzeżone.
+            <p className="text-sm text-muted-foreground">
+                © {new Date().getFullYear()} Wrocławskie Stowarzyszenie Kendo. Wszystkie prawa zastrzeżone.
               </p>
               <p className="text-xs text-muted-foreground mt-2 font-zen">
                 橋の都 • Miasto Mostów • Wrocław
