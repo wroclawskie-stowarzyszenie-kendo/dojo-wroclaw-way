@@ -12,8 +12,8 @@ const Disciplines = () => {
       description: "Droga miecza. Japońska sztuka walki wywodząca się z szermierki, wykorzystująca bambusowe miecze i zbroję.",
       image: kendoImage,
       contact: {
-        name: "Ola",
-        phone: "+48 798 416 649"
+        name: "Maciej",
+        phone: "+48 500 132 644"
       }
     },
     {
