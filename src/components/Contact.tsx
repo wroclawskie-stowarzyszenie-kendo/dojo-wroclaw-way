@@ -136,10 +136,10 @@ const Contact = () => {
                 <h4 className="text-xl font-zen font-medium">Kendo</h4>
                 <div className="space-y-3 flex-1 flex flex-col justify-end">
                   <div className="bg-gradient-subtle rounded-lg p-4 space-y-2">
-                    <p className="font-zen font-medium text-accent mb-2">Ola</p>
+                    <p className="font-zen font-medium text-accent mb-2">Maciej</p>
                     <div className="flex items-center justify-start gap-3 text-muted-foreground text-left">
                       <Phone className="w-4 h-4 flex-shrink-0" />
-                      <span className="font-mono text-xs sm:text-sm break-all">+48 798 416 649</span>
+                      <span className="font-mono text-xs sm:text-sm break-all">+48 500 132 644</span>
                     </div>
                     <div className="flex items-center justify-start gap-3 text-muted-foreground text-left">
                       <Mail className="w-4 h-4 flex-shrink-0" />
@@ -148,7 +148,7 @@ const Contact = () => {
                   </div>
                   <div className="flex gap-2">
                     <Button variant="outline" className="flex-1" asChild>
-                      <a href="tel:+48798416649">
+                      <a href="tel:+48500132644">
                         <Phone className="w-4 h-4 mr-2" />
                         Zadzwoń
                       </a>
