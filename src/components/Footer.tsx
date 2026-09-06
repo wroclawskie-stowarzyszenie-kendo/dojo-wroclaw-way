@@ -28,7 +28,7 @@ const Footer = () => {
             </h3>
             <div className="space-y-3">
               <div>
-                <p className="text-sm font-medium text-accent">Sezon 2025/2026</p>
+                <p className="text-sm font-medium text-accent">Sezon 2026/2027</p>
                 <p className="text-sm text-muted-foreground">
                   Szkoła Podstawowa nr 33<br />
                   ul. Kolista 17<br />
