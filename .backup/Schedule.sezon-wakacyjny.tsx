@@ -39,50 +39,19 @@ const Schedule = () => {
             </div>
           </div>
 
-          {/* Season Start Highlight */}
-          <Card className="p-10 md:p-14 bg-gradient-subtle border-border text-center relative overflow-hidden">
-            <div className="space-y-6">
-              <div className="inline-flex items-center space-x-2 bg-crimson/10 text-crimson px-4 py-2 rounded-full text-sm font-medium">
-                <Calendar className="w-4 h-4" />
-                <span>Nowy sezon</span>
-              </div>
-              <h3 className="text-4xl md:text-5xl font-zen font-light text-soft-white">
-                Start sezonu 2026/2027
-              </h3>
-              <p className="text-6xl md:text-7xl font-zen text-accent">28.09</p>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Zaczynamy nowy sezon treningowy! To idealny moment, żeby dołączyć — pierwszy trening jest bezpłatny i nie wymaga żadnego doświadczenia ani sprzętu. Wystarczy strój sportowy i dobre chęci.
-              </p>
-              <div className="flex flex-wrap justify-center gap-6 pt-4 text-muted-foreground">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-accent" />
-                  <span>Pierwszy trening bezpłatny</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Users className="w-5 h-5 text-accent" />
-                  <span>Bez ograniczeń wiekowych</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="w-5 h-5 text-accent" />
-                  <span>19:00 - 21:00</span>
-                </div>
-              </div>
-            </div>
-          </Card>
-
           {/* Season Info Cards - Larger Layout */}
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <Card className="p-8 bg-gradient-subtle border-border text-center group hover:shadow-crimson transition-smooth">
               <div className="space-y-4">
                 <div className="text-5xl font-zen text-crimson mb-4 group-hover:scale-110 transition-transform">📅</div>
-                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Sezon 2026/2027</h3>
+                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Sezon Wakacyjny</h3>
                 <div className="space-y-2">
-                  <p className="text-lg font-medium text-accent">Start 28 września</p>
+                  <p className="text-lg font-medium text-accent">Lipiec-Sierpień</p>
                   <p className="text-lg text-muted-foreground">19:00 - 21:00</p>
                 </div>
                 <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground mt-4">
                   <Calendar className="w-4 h-4" />
-                  <span>Treningi w całym roku szkolnym</span>
+                  <span>Sezon 2025/2026</span>
                 </div>
               </div>
             </Card>
@@ -118,12 +87,38 @@ const Schedule = () => {
             </Card>
           </div>
 
+          {/* Calendar Section - Enhanced */}
+          <div className="space-y-8">
+            <div className="text-center space-y-4">
+              <h3 className="text-3xl font-zen font-medium text-soft-white">
+                Kalendarz Treningów
+              </h3>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Sprawdź aktualne terminy treningów wszystkich dyscyplin. Kalendarz jest na bieżąco aktualizowany o ewentualne zmiany.
+              </p>
+            </div>
+
+            <Card className="p-6 bg-gradient-subtle border-border">
+              <div className="rounded-lg overflow-hidden border border-border shadow-elegant bg-card" style={{ height: '38vh' }}>
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FWarsaw&bgcolor=%23ffffff&src=Y19iMDgxYTFlNTY3MGY5MDVmZjNlMGVlOGNiODFlOTMyNGFhM2NlOGJhYWYxYjYyODVlM2QyNmVhMDRjYmI2ODgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000&mode=MONTH&showWeekends=false"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  title="Kalendarz treningów WSK Wrocław"
+                ></iframe>
+              </div>
+            </Card>
+          </div>
+
           {/* Location Section - Enhanced */}
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8">
               <div className="space-y-4">
                 <h3 className="text-3xl font-zen font-medium text-soft-white">
-                  Lokalizacja Dojo
+                  Lokalizacja Dojo - sezon wakacyjny
                 </h3>
               </div>
 
@@ -134,9 +129,9 @@ const Schedule = () => {
                     <div className="space-y-2">
                       <h4 className="text-xl font-zen font-medium text-soft-white">Adres Treningów</h4>
                       <div className="text-muted-foreground space-y-1">
-                        <p className="font-medium">Szkoła Podstawowa nr 33</p>
-                        <p>ul. Kolista 17</p>
-                        <p>54-152 Wrocław</p>
+                        <p className="font-medium">Szkoła Podstawowa nr 44</p>
+                        <p>ul. Wilanowska 31</p>
+                        <p>51-206 Wrocław</p>
                       </div>
                     </div>
                   </div>
@@ -151,27 +146,15 @@ const Schedule = () => {
                         <div className="flex items-center space-x-2">
                           <span className="font-medium">Autobusy:</span>
                           <div className="flex flex-wrap gap-1">
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">101</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">102</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">103</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">104</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">126</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">127</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">152</span>
-                          </div>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <span className="font-medium">Tramwaje:</span>
-                          <div className="flex flex-wrap gap-1">
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">12</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">18</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">19</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">21</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">121</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">131</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">150</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">D</span>
                           </div>
                         </div>
                         <div className="flex items-center space-x-2">
                           <span className="font-medium">Parking:</span>
-                          <span>Dostępny na terenie szkoły</span>
+                          <span>Dostępny w okolicy</span>
                         </div>
                       </div>
                     </div>
@@ -206,14 +189,14 @@ const Schedule = () => {
                 <div className="space-y-4">
                   <div className="rounded-lg overflow-hidden border border-border shadow-elegant" style={{ height: '47vh' }}>
                     <iframe
-                      src="https://www.google.com/maps?q=Szko%C5%82a+Podstawowa+nr+33%2C+ul.+Kolista+17%2C+54-152+Wroc%C5%82aw&output=embed"
+                      src="https://www.google.com/maps?q=Szko%C5%82a+Podstawowa+nr+44%2C+ul.+Wilanowska+31%2C+51-206+Wroc%C5%82aw&output=embed"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Lokalizacja treningów - Szkoła Podstawowa nr 33, ul. Kolista 17, Wrocław"
+                      title="Lokalizacja treningów - Szkoła Podstawowa nr 44, ul. Wilanowska 31, Wrocław"
                     ></iframe>
                   </div>
                 </div>
