@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Calendar, Clock, ExternalLink, CheckCircle, Bus } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -31,53 +31,81 @@ const Contact = () => {
         {/* Training Schedule & Location */}
         <div className="grid lg:grid-cols-2 gap-12">
           
-          {/* Calendar */}
+          {/* Course Highlight */}
           <div className="bg-gradient-subtle rounded-2xl p-8 border border-border flex flex-col">
             <div className="text-center mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-crimson/10 text-crimson text-sm font-medium mb-4">
+                <Calendar className="w-4 h-4" />
+                Nowy sezon 2026/2027
+              </div>
               <h3 className="text-2xl font-zen font-medium mb-4 text-soft-white">
-                Harmonogram Treningów - Sezon 2025/2026
+                Kurs kendo od podstaw
               </h3>
-              
-              {/* Season Info Cards */}
-              <div className="grid md:grid-cols-3 gap-4 mb-8">
-                <div className="bg-card rounded-lg p-4 border border-border">
-                  <div className="text-2xl font-zen text-crimson mb-2">📅</div>
-                  <h4 className="font-zen font-medium text-accent mb-1">Sezon Wakacyjny</h4>
-                  <p className="text-sm text-muted-foreground">Lipiec-Sierpień</p>
-                  <p className="text-sm text-muted-foreground">19:00 - 21:00</p>
-                </div>
-                <div className="bg-card rounded-lg p-4 border border-border">
-                  <div className="text-2xl font-zen text-indigo mb-2">🚪</div>
-                  <h4 className="font-zen font-medium text-accent mb-1">Nabór Otwarty</h4>
-                  <p className="text-sm text-muted-foreground">Cały rok</p>
-                </div>
-                <div className="bg-card rounded-lg p-4 border border-border">
-                  <div className="text-2xl font-zen text-accent mb-2">🎯</div>
-                  <h4 className="font-zen font-medium text-accent mb-1">Pierwszy Trening</h4>
-                  <p className="text-sm text-muted-foreground">Bezpłatny</p>
-                </div>
+              <p className="text-5xl font-zen font-bold text-indigo mb-6">28.09.2026</p>
+              <p className="text-muted-foreground mb-8 max-w-xl mx-auto leading-relaxed">
+                12-tygodniowy kurs pod okiem sensei Wiesława Biela 6 dan kendo renshi.
+                Zakończysz go egzaminem na stopień 5 kyu. Przez cały wrzesień zapraszamy
+                na darmowe zajęcia próbne — przyjdź, obejrzyj i spróbuj.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="bg-card rounded-lg p-4 border border-border text-center">
+                <Clock className="w-6 h-6 text-crimson mb-2 mx-auto" />
+                <p className="font-medium text-sm">Poniedziałki i piątki</p>
+                <p className="text-sm text-muted-foreground">18:30 – 19:30</p>
+              </div>
+              <div className="bg-card rounded-lg p-4 border border-border text-center">
+                <Calendar className="w-6 h-6 text-indigo mb-2 mx-auto" />
+                <p className="font-medium text-sm">12 tygodni</p>
+                <p className="text-sm text-muted-foreground">od 28 września</p>
+              </div>
+              <div className="bg-card rounded-lg p-4 border border-border text-center">
+                <MapPin className="w-6 h-6 text-accent mb-2 mx-auto" />
+                <p className="font-medium text-sm">SP nr 33</p>
+                <p className="text-sm text-muted-foreground">ul. Kolista 17</p>
+              </div>
+              <div className="bg-card rounded-lg p-4 border border-border text-center">
+                <CheckCircle className="w-6 h-6 text-accent mb-2 mx-auto" />
+                <p className="font-medium text-sm">Cena</p>
+                <p className="text-sm text-muted-foreground">290 zł</p>
               </div>
             </div>
-            <div className="relative flex-1">
-              <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant bg-card" style={{ minHeight: '400px' }}>
-                <iframe
-                  src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FWarsaw&bgcolor=%23ffffff&src=Y19iMDgxYTFlNTY3MGY5MDVmZjNlMGVlOGNiODFlOTMyNGFhM2NlOGJhYWYxYjYyODVlM2QyNmVhMDRjYmI2ODgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000&mode=MONTH&showWeekends=false"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  title="Kalendarz treningów WSK Wrocław"
-                ></iframe>
-              </div>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+              <a
+                href="tel:+48500132644"
+                className="inline-flex items-center gap-2 text-muted-foreground hover:text-soft-white transition-smooth"
+              >
+                <Phone className="w-4 h-4" />
+                <span className="font-mono">+48 500 132 644</span>
+              </a>
+              <a
+                href="mailto:wsk@kendo.wroclaw.pl"
+                className="inline-flex items-center gap-2 text-muted-foreground hover:text-soft-white transition-smooth"
+              >
+                <Mail className="w-4 h-4" />
+                <span>wsk@kendo.wroclaw.pl</span>
+              </a>
             </div>
+
+            <Button variant="hero" size="lg" className="w-full text-lg mt-auto" asChild>
+              <a
+                href="https://forms.gle/noQV4PZg1HJmT9Zx5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Zapisz się na kurs
+                <ExternalLink className="w-4 h-4 ml-2" />
+              </a>
+            </Button>
           </div>
 
           {/* Location */}
           <div className="bg-gradient-subtle rounded-2xl p-8 border border-border flex flex-col">
             <div className="text-center mb-6">
               <h3 className="text-2xl font-zen font-medium mb-4 text-soft-white">
-                Lokalizacja Dojo - sezon wakacyjny
+                Lokalizacja Dojo
               </h3>
             </div>
             
@@ -86,32 +114,33 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 mx-auto mb-3 text-accent" />
                 <h4 className="font-zen font-medium mb-2 text-accent">Adres Treningów</h4>
                 <p className="text-muted-foreground">
-                  Szkoła podstawowa nr 44<br />
-                  ul. Wilanowska 31<br />
-                  51-206 Wrocław
+                  Szkoła Podstawowa nr 33<br />
+                  ul. Kolista 17<br />
+                  54-152 Wrocław
                 </p>
               </div>
               
               <div className="bg-card rounded-lg p-6 border border-border text-center">
-                <div className="text-2xl mb-3">🚌</div>
+                <Bus className="w-6 h-6 mx-auto mb-3 text-accent" />
                 <h4 className="font-zen font-medium mb-2 text-accent">Dojazd</h4>
                 <p className="text-muted-foreground">
-                  Autobusy: 121, 131, 150, D<br />
-                  Parking dostępny w okolicy
+                  Autobusy: 101, 102, 103, 104, 126, 127, 132, 144, 152<br />
+                  Tramwaje: 19, 21 (przystanek Kolista)<br />
+                  Parking dostępny w okolicy szkoły
                 </p>
               </div>
             </div>
             
             <div className="h-full rounded-lg overflow-hidden border border-border shadow-elegant" style={{ minHeight: '400px' }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.0!2d17.048611!3d51.091389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc277a8b6c4e5%3A0xabcdef1234567890!2sWilanowska%2031%2C%2051-206%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1640995200000"
+                src="https://www.google.com/maps?q=Szko%C5%82a+Podstawowa+nr+33%2C+ul.+Kolista+17%2C+54-152+Wroc%C5%82aw&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Lokalizacja treningów - ul. Wilanowska 31, Wrocław"
+                title="Lokalizacja treningów - Szkoła Podstawowa nr 33, ul. Kolista 17, Wrocław"
               ></iframe>
             </div>
           </div>
@@ -143,7 +172,7 @@ const Contact = () => {
                     </div>
                     <div className="flex items-center justify-start gap-3 text-muted-foreground text-left">
                       <Mail className="w-4 h-4 flex-shrink-0" />
-                      <span className="text-xs sm:text-sm break-all">kendowroc@audiobiel.pl</span>
+                      <span className="text-xs sm:text-sm break-all">wsk@kendo.wroclaw.pl</span>
                     </div>
                   </div>
                   <div className="flex gap-2">
@@ -154,7 +183,7 @@ const Contact = () => {
                       </a>
                     </Button>
                     <Button variant="outline" className="flex-1" asChild>
-                      <a href="mailto:kendowroc@audiobiel.pl">
+                      <a href="mailto:wsk@kendo.wroclaw.pl">
                         <Mail className="w-4 h-4 mr-2" />
                         Email
                       </a>
@@ -212,7 +241,7 @@ const Contact = () => {
                     </div>
                     <div className="flex items-start justify-start gap-3 text-muted-foreground text-left">
                       <MapPin className="w-4 h-4 flex-shrink-0 mt-1" />
-                      <span className="text-xs sm:text-sm break-words">ul. Stanisławowska 47, 54-611 Wrocław</span>
+                      <span className="text-xs sm:text-sm break-words">Szkoła Podstawowa nr 33, ul. Kolista 17, 54-152 Wrocław</span>
                     </div>
                   </div>
                   <Button variant="outline" className="w-full" asChild>
