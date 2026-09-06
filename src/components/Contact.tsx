@@ -231,7 +231,7 @@ const Contact = () => {
             {/* General Contact */}
             <Card className="p-4 md:p-6 bg-card border-border hover:border-accent transition-smooth hover:shadow-elegant group flex flex-col">
               <div className="text-center space-y-4 flex-1 flex flex-col">
-                <div className="text-3xl group-hover:scale-110 transition-transform">📧</div>
+                <Mail className="w-10 h-10 mx-auto text-accent group-hover:scale-110 transition-transform" />
                 <h4 className="text-xl font-zen font-medium">Informacje Ogólne</h4>
                 <div className="space-y-3 flex-1 flex flex-col justify-end">
                   <div className="bg-gradient-subtle rounded-lg p-4 space-y-2">
