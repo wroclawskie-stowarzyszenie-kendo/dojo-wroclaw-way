@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Calendar, Clock, Users, CheckCircle, Info } from "lucide-react";
+import { MapPin, Calendar, Clock, Users, CheckCircle, Info, Mail, Phone, ExternalLink, Bus, GraduationCap, Target } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -39,76 +39,125 @@ const Schedule = () => {
             </div>
           </div>
 
-          {/* Season Start Highlight */}
+          {/* Course Start Highlight */}
           <Card className="p-10 md:p-14 bg-gradient-subtle border-border text-center relative overflow-hidden">
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div className="inline-flex items-center space-x-2 bg-crimson/10 text-crimson px-4 py-2 rounded-full text-sm font-medium">
                 <Calendar className="w-4 h-4" />
-                <span>Nowy sezon</span>
+                <span>Nowy sezon 2026/2027</span>
               </div>
-              <h3 className="text-4xl md:text-5xl font-zen font-light text-soft-white">
-                Start sezonu 2026/2027
-              </h3>
-              <p className="text-6xl md:text-7xl font-zen text-accent">28.09</p>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Zaczynamy nowy sezon treningowy! To idealny moment, żeby dołączyć — pierwszy trening jest bezpłatny i nie wymaga żadnego doświadczenia ani sprzętu. Wystarczy strój sportowy i dobre chęci.
+              <div className="space-y-4">
+                <h3 className="text-4xl md:text-5xl font-zen font-light text-soft-white">
+                  Kurs kendo od podstaw
+                </h3>
+                <p className="text-6xl md:text-7xl font-zen text-accent">28.09.2026</p>
+              </div>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+                Chcesz zacząć trenować szermierkę japońską? Przyjdź na kurs kendo od podstaw. W ciągu <span className="text-soft-white font-medium">12 tygodni</span> nauczysz się podstaw kendo, technik poruszania się i posługiwania się mieczem — pod okiem wybitnego sensei, trenera reprezentacji Polski, <span className="text-soft-white font-medium">Wiesława Biela 6 dan kendo renshi</span>, z zespołem instruktorów. Kurs zakończysz egzaminem na stopień <span className="text-soft-white font-medium">5 kyu</span>.
               </p>
-              <div className="flex flex-wrap justify-center gap-6 pt-4 text-muted-foreground">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-accent" />
-                  <span>Pierwszy trening bezpłatny</span>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+                Niezależnie od wieku, płci i kondycji możesz zacząć trenować kendo. To kontaktowy sport walki, ale przy zachowaniu środków ostrożności nie grożą Ci kontuzje. W treningu całe ciało pracuje równomiernie — znajdziesz u nas przestrzeń na intensywny wysiłek, udział w zawodach i zdobywanie medali, jak i spokojniejsze treningi dostosowane do Twoich możliwości.
+              </p>
+
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto pt-4">
+                <div className="flex flex-col items-center space-y-2 p-4 rounded-xl bg-card border border-border">
+                  <Clock className="w-6 h-6 text-accent" />
+                  <span className="text-soft-white font-medium">Poniedziałki i piątki</span>
+                  <span className="text-muted-foreground">18:30 – 19:30</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Users className="w-5 h-5 text-accent" />
-                  <span>Bez ograniczeń wiekowych</span>
+                <div className="flex flex-col items-center space-y-2 p-4 rounded-xl bg-card border border-border">
+                  <Calendar className="w-6 h-6 text-accent" />
+                  <span className="text-soft-white font-medium">12 tygodni</span>
+                  <span className="text-muted-foreground">od 28 września</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="w-5 h-5 text-accent" />
-                  <span>19:00 - 21:00</span>
+                <div className="flex flex-col items-center space-y-2 p-4 rounded-xl bg-card border border-border">
+                  <MapPin className="w-6 h-6 text-accent" />
+                  <span className="text-soft-white font-medium">SP nr 33</span>
+                  <span className="text-muted-foreground">ul. Kolista 17</span>
+                </div>
+                <div className="flex flex-col items-center space-y-2 p-4 rounded-xl bg-card border border-border">
+                  <CheckCircle className="w-6 h-6 text-accent" />
+                  <span className="text-soft-white font-medium">Cena</span>
+                  <span className="text-muted-foreground">290 zł</span>
                 </div>
               </div>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a
+                  href="tel:+48500132644"
+                  className="inline-flex items-center space-x-2 text-lg text-soft-white hover:text-accent transition-colors"
+                >
+                  <Phone className="w-5 h-5" />
+                  <span>+48 500 132 644</span>
+                </a>
+                <a
+                  href="mailto:wsk@kendo.wroclaw.pl"
+                  className="inline-flex items-center space-x-2 text-lg text-soft-white hover:text-accent transition-colors"
+                >
+                  <Mail className="w-5 h-5" />
+                  <span>wsk@kendo.wroclaw.pl</span>
+                </a>
+              </div>
+
+              <div className="pt-2">
+                <a
+                  href="https://forms.gle/noQV4PZg1HJmT9Zx5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="hero" size="lg" className="text-lg px-10 py-4 shadow-crimson hover:shadow-indigo">
+                    Zapisz się na kurs
+                    <ExternalLink className="w-4 h-4 ml-2" />
+                  </Button>
+                </a>
+              </div>
+
+              <p className="text-sm text-muted-foreground">
+                Nie masz sprzętu? Wszystko możesz wypożyczyć na miejscu. Wystarczy swobodny strój sportowy — ćwiczymy na boso. Przed kursem, przez cały wrzesień, zapraszamy na darmowe zajęcia: przyjdź, obejrzyj i spróbuj.
+              </p>
             </div>
           </Card>
 
-          {/* Season Info Cards - Larger Layout */}
+          {/* Course Info Cards - Larger Layout */}
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <Card className="p-8 bg-gradient-subtle border-border text-center group hover:shadow-crimson transition-smooth">
               <div className="space-y-4">
-                <div className="text-5xl font-zen text-crimson mb-4 group-hover:scale-110 transition-transform">📅</div>
-                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Sezon 2026/2027</h3>
+                <Calendar className="w-12 h-12 text-crimson mb-4 group-hover:scale-110 transition-transform mx-auto" />
+                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Start kursu</h3>
                 <div className="space-y-2">
-                  <p className="text-lg font-medium text-accent">Start 28 września</p>
-                  <p className="text-lg text-muted-foreground">19:00 - 21:00</p>
+                  <p className="text-lg font-medium text-accent">28 września 2026</p>
+                  <p className="text-lg text-muted-foreground">Poniedziałki i piątki</p>
+                  <p className="text-sm text-muted-foreground">18:30 – 19:30</p>
                 </div>
                 <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground mt-4">
-                  <Calendar className="w-4 h-4" />
-                  <span>Treningi w całym roku szkolnym</span>
+                  <Clock className="w-4 h-4" />
+                  <span>12-tygodniowy program</span>
                 </div>
               </div>
             </Card>
 
             <Card className="p-8 bg-gradient-subtle border-border text-center group hover:shadow-indigo transition-smooth">
               <div className="space-y-4">
-                <div className="text-5xl font-zen text-indigo mb-4 group-hover:scale-110 transition-transform">🚪</div>
-                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Nabór Otwarty</h3>
+                <GraduationCap className="w-12 h-12 text-indigo mb-4 group-hover:scale-110 transition-transform mx-auto" />
+                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Egzamin 5 kyu</h3>
                 <div className="space-y-2">
-                  <p className="text-lg font-medium text-accent">Cały rok</p>
-                  <p className="text-sm text-muted-foreground">Możesz dołączyć w każdym momencie</p>
+                  <p className="text-lg font-medium text-accent">Po 12 tygodniach</p>
+                  <p className="text-sm text-muted-foreground">Zakończ kurs egzaminem i dołącz do klubu</p>
                 </div>
                 <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground mt-4">
                   <Users className="w-4 h-4" />
-                  <span>Bez ograniczeń wiekowych</span>
+                  <span>Sensei Wiesław Biela 6 dan renshi</span>
                 </div>
               </div>
             </Card>
 
             <Card className="p-8 bg-gradient-subtle border-border text-center group hover:shadow-elegant transition-smooth">
               <div className="space-y-4">
-                <div className="text-5xl font-zen text-accent mb-4 group-hover:scale-110 transition-transform">🎯</div>
-                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Pierwszy Trening</h3>
+                <Target className="w-12 h-12 text-accent mb-4 group-hover:scale-110 transition-transform mx-auto" />
+                <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Darmowe zajęcia</h3>
                 <div className="space-y-2">
-                  <p className="text-lg font-medium text-accent">Bezpłatny</p>
-                  <p className="text-sm text-muted-foreground">Poznaj naszą społeczność</p>
+                  <p className="text-lg font-medium text-accent">Cały wrzesień</p>
+                  <p className="text-sm text-muted-foreground">Przyjdź, obejrzyj i spróbuj przed kursem</p>
                 </div>
                 <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground mt-4">
                   <CheckCircle className="w-4 h-4" />
@@ -144,7 +193,7 @@ const Schedule = () => {
 
                 <Card className="p-6 bg-card border-border">
                   <div className="flex items-start space-x-4">
-                    <div className="text-2xl flex-shrink-0 mt-1">🚌</div>
+                    <Bus className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                     <div className="space-y-2">
                       <h4 className="text-xl font-zen font-medium text-soft-white">Komunikacja Miejska</h4>
                       <div className="text-muted-foreground space-y-2">
@@ -157,21 +206,21 @@ const Schedule = () => {
                             <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">104</span>
                             <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">126</span>
                             <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">127</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">132</span>
+                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">144</span>
                             <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">152</span>
                           </div>
                         </div>
                         <div className="flex items-center space-x-2">
                           <span className="font-medium">Tramwaje:</span>
                           <div className="flex flex-wrap gap-1">
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">12</span>
-                            <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">18</span>
                             <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">19</span>
                             <span className="bg-gradient-subtle px-2 py-1 rounded text-sm">21</span>
                           </div>
                         </div>
                         <div className="flex items-center space-x-2">
                           <span className="font-medium">Parking:</span>
-                          <span>Dostępny na terenie szkoły</span>
+                          <span>Dostępny w okolicy szkoły</span>
                         </div>
                       </div>
                     </div>
