@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Calendar, Clock, Users, CheckCircle, Info, Mail, Phone, ExternalLink } from "lucide-react";
+import { MapPin, Calendar, Clock, Users, CheckCircle, Info, Mail, Phone, ExternalLink, Bus, GraduationCap, Target } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -122,7 +122,7 @@ const Schedule = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <Card className="p-8 bg-gradient-subtle border-border text-center group hover:shadow-crimson transition-smooth">
               <div className="space-y-4">
-                <div className="text-5xl font-zen text-crimson mb-4 group-hover:scale-110 transition-transform">📅</div>
+                <Calendar className="w-12 h-12 text-crimson mb-4 group-hover:scale-110 transition-transform mx-auto" />
                 <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Start kursu</h3>
                 <div className="space-y-2">
                   <p className="text-lg font-medium text-accent">28 września 2026</p>
@@ -138,7 +138,7 @@ const Schedule = () => {
 
             <Card className="p-8 bg-gradient-subtle border-border text-center group hover:shadow-indigo transition-smooth">
               <div className="space-y-4">
-                <div className="text-5xl font-zen text-indigo mb-4 group-hover:scale-110 transition-transform">🎓</div>
+                <GraduationCap className="w-12 h-12 text-indigo mb-4 group-hover:scale-110 transition-transform mx-auto" />
                 <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Egzamin 5 kyu</h3>
                 <div className="space-y-2">
                   <p className="text-lg font-medium text-accent">Po 12 tygodniach</p>
@@ -153,7 +153,7 @@ const Schedule = () => {
 
             <Card className="p-8 bg-gradient-subtle border-border text-center group hover:shadow-elegant transition-smooth">
               <div className="space-y-4">
-                <div className="text-5xl font-zen text-accent mb-4 group-hover:scale-110 transition-transform">🎯</div>
+                <Target className="w-12 h-12 text-accent mb-4 group-hover:scale-110 transition-transform mx-auto" />
                 <h3 className="text-2xl font-zen font-medium text-soft-white mb-3">Darmowe zajęcia</h3>
                 <div className="space-y-2">
                   <p className="text-lg font-medium text-accent">Cały wrzesień</p>
@@ -185,7 +185,7 @@ const Schedule = () => {
                       <div className="text-muted-foreground space-y-1">
                         <p className="font-medium">Szkoła Podstawowa nr 33</p>
                         <p>ul. Kolista 17</p>
-                        <p>54-151 Wrocław</p>
+                        <p>54-152 Wrocław</p>
                       </div>
                     </div>
                   </div>
@@ -193,7 +193,7 @@ const Schedule = () => {
 
                 <Card className="p-6 bg-card border-border">
                   <div className="flex items-start space-x-4">
-                    <div className="text-2xl flex-shrink-0 mt-1">🚌</div>
+                    <Bus className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                     <div className="space-y-2">
                       <h4 className="text-xl font-zen font-medium text-soft-white">Komunikacja Miejska</h4>
                       <div className="text-muted-foreground space-y-2">
@@ -255,7 +255,7 @@ const Schedule = () => {
                 <div className="space-y-4">
                   <div className="rounded-lg overflow-hidden border border-border shadow-elegant" style={{ height: '47vh' }}>
                     <iframe
-                      src="https://www.google.com/maps?q=Szko%C5%82a+Podstawowa+nr+33%2C+ul.+Kolista+17%2C+Wroc%C5%82aw&output=embed"
+                      src="https://www.google.com/maps?q=Szko%C5%82a+Podstawowa+nr+33%2C+ul.+Kolista+17%2C+54-152+Wroc%C5%82aw&output=embed"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
