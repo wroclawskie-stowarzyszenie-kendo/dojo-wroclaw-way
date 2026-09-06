@@ -235,8 +235,10 @@ const Schedule = () => {
                       <div className="text-muted-foreground grid grid-cols-1 gap-2 sm:grid-cols-[auto,1fr]">
                         <div className="font-medium text-crimson">Kendo:</div>
                         <div className="sm:text-right">Poniedziałki 19:00 - 21:00</div>
-                        <div className="font-medium text-indigo">Iaido/Jodo:</div>
-                        <div className="sm:text-right">Wtorki 19:00 - 21:00</div>
+                        <div className="font-medium text-indigo">Jodo:</div>
+                        <div className="sm:text-right">Poniedziałki 19:00 - 21:00</div>
+                        <div className="font-medium text-indigo">Iaido:</div>
+                        <div className="sm:text-right">Środy 19:00 - 21:00</div>
                       </div>
                     </div>
                   </div>
