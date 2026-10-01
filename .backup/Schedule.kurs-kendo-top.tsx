@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Calendar, Clock, CheckCircle, Info, ExternalLink, Bus } from "lucide-react";
+import { MapPin, Calendar, Clock, Users, CheckCircle, Info, Mail, Phone, ExternalLink, Bus, GraduationCap, Target } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
