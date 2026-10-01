@@ -167,6 +167,144 @@ const Schedule = () => {
             </Card>
           </div>
 
+          {/* Recruitment — three disciplines */}
+          <div className="space-y-8">
+            <div className="text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-crimson/10 text-crimson text-sm font-medium mb-4">
+                <Calendar className="w-4 h-4" />
+                Nabory 2026/2027
+              </div>
+              <h3 className="text-3xl md:text-4xl font-zen font-medium text-soft-white">
+                Wybierz swoją drogę
+              </h3>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-6 items-stretch">
+              <Card className="relative p-6 bg-card border-border hover:border-crimson transition-smooth hover:shadow-crimson flex flex-col">
+                <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-[0.15em] text-crimson bg-crimson/10 border border-crimson/40 rounded-sm px-3 py-1 backdrop-blur-sm glow-crimson-soft">
+                  12 tygodni
+                </span>
+                <div className="mb-5">
+                  <p className="text-3xl font-zen text-crimson mb-2">剣道</p>
+                  <h4 className="text-2xl font-zen font-medium text-soft-white">Kendo od podstaw</h4>
+                </div>
+
+                <p className="text-3xl font-zen text-soft-white mb-4">28.09.2026</p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Kurs prowadzony przez sensei Wiesława Biela 6 dan kendo renshi z zespołem instruktorów. Zakończysz go egzaminem na 5 kyu.
+                </p>
+
+                <div className="space-y-3 border-t border-border pt-5 mb-6 text-sm">
+                  <div className="flex items-start gap-3">
+                    <Clock className="w-5 h-5 text-crimson mt-0.5" />
+                    <span>Poniedziałki i piątki, 18:30–19:30</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-crimson mt-0.5" />
+                    <span>SP nr 33, ul. Kolista 17</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-crimson mt-0.5" />
+                    <span>290 zł za cały kurs</span>
+                  </div>
+                </div>
+
+                <p className="text-sm text-muted-foreground mb-6">
+                  Nie potrzebujesz sprzętu ani doświadczenia. Przez cały wrzesień możesz bezpłatnie obejrzeć i spróbować treningu.
+                </p>
+
+                <Button variant="hero" size="lg" className="w-full mt-auto" asChild>
+                  <a href="https://forms.gle/noQV4PZg1HJmT9Zx5" target="_blank" rel="noopener noreferrer">
+                    Zapisz się na Kendo
+                    <ExternalLink className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
+              </Card>
+
+              <Card className="relative p-6 bg-card border-border hover:border-indigo transition-smooth hover:shadow-indigo flex flex-col">
+                <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-[0.15em] text-indigo bg-indigo/10 border border-indigo/40 rounded-sm px-3 py-1 backdrop-blur-sm glow-indigo-soft">
+                  Nowa grupa
+                </span>
+                <div className="mb-5">
+                  <p className="text-3xl font-zen text-indigo mb-2">杖道</p>
+                  <h4 className="text-2xl font-zen font-medium text-soft-white">Jodo od podstaw</h4>
+                </div>
+
+                <p className="text-3xl font-zen text-soft-white mb-4">05.10.2026</p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Poznaj walkę drewnianym kijem przeciwko partnerowi uzbrojonemu w miecz. Trening rozwija precyzję, dystans, wyczucie momentu i kontrolę ruchu.
+                </p>
+
+                <div className="space-y-3 border-t border-border pt-5 mb-6 text-sm">
+                  <div className="flex items-start gap-3">
+                    <Clock className="w-5 h-5 text-indigo mt-0.5" />
+                    <span>Poniedziałek, 18:30–19:30</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-indigo mt-0.5" />
+                    <span>SP nr 33, ul. Kolista 17</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-indigo mt-0.5" />
+                    <span>ZNKR Jodo i Shinto Muso Ryu Jodo</span>
+                  </div>
+                </div>
+
+                <p className="text-sm text-muted-foreground mb-6">
+                  Nie potrzebujesz wcześniejszego doświadczenia — wszystkie techniki poznasz od podstaw.
+                </p>
+
+                <Button variant="outline" size="lg" className="w-full mt-auto" asChild>
+                  <a href="https://www.facebook.com/events/2856227998084495/" target="_blank" rel="noopener noreferrer">
+                    Zobacz wydarzenie Jodo
+                    <ExternalLink className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
+              </Card>
+
+              <Card className="relative p-6 bg-card border-border hover:border-accent transition-smooth hover:shadow-elegant flex flex-col">
+                <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-[0.15em] text-accent bg-accent/10 border border-accent/40 rounded-sm px-3 py-1 backdrop-blur-sm glow-accent-soft">
+                  Nowa grupa
+                </span>
+                <div className="mb-5">
+                  <p className="text-3xl font-zen text-accent mb-2">居合道</p>
+                  <h4 className="text-2xl font-zen font-medium text-soft-white">Iaido od podstaw</h4>
+                </div>
+
+                <p className="text-3xl font-zen text-soft-white mb-4">07.10.2026</p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Poznaj japońską sztukę dobywania miecza. Trening rozwija koncentrację, właściwą postawę, precyzję ruchu i spokój umysłu.
+                </p>
+
+                <div className="space-y-3 border-t border-border pt-5 mb-6 text-sm">
+                  <div className="flex items-start gap-3">
+                    <Calendar className="w-5 h-5 text-accent mt-0.5" />
+                    <span>Środa, 7 października</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-accent mt-0.5" />
+                    <span>SP nr 33, ul. Kolista 17</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent mt-0.5" />
+                    <span>ZNKR Iaido i tradycyjne formy koryu</span>
+                  </div>
+                </div>
+
+                <p className="text-sm text-muted-foreground mb-6">
+                  Nie potrzebujesz wcześniejszego doświadczenia — zaczynamy od płynnego i bezpiecznego dobycia miecza.
+                </p>
+
+                <Button variant="outline" size="lg" className="w-full mt-auto" asChild>
+                  <a href="https://www.facebook.com/events/1623553709564972/" target="_blank" rel="noopener noreferrer">
+                    Zobacz wydarzenie Iaido
+                    <ExternalLink className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
+              </Card>
+            </div>
+          </div>
+
           {/* Location Section - Enhanced */}
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8">
