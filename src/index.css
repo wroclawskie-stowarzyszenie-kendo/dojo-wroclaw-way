@@ -173,6 +173,18 @@ All colors MUST be HSL for proper theming.
     box-shadow: var(--shadow-indigo);
   }
 
+  .glow-crimson-soft {
+    box-shadow: 0 0 12px hsl(var(--crimson) / 0.12);
+  }
+
+  .glow-indigo-soft {
+    box-shadow: 0 0 12px hsl(var(--indigo) / 0.12);
+  }
+
+  .glow-accent-soft {
+    box-shadow: 0 0 12px hsl(var(--accent) / 0.12);
+  }
+
   .transition-smooth {
     transition: var(--transition-smooth);
   }

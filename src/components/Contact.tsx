@@ -41,13 +41,13 @@ const Contact = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-6 items-stretch">
-            <Card className="p-6 bg-card border-border hover:border-crimson transition-smooth hover:shadow-crimson flex flex-col">
-              <div className="flex items-start justify-between gap-4 mb-5">
-                <div>
-                  <p className="text-3xl font-zen text-crimson mb-2">剣道</p>
-                  <h4 className="text-2xl font-zen font-medium text-soft-white">Kendo od podstaw</h4>
-                </div>
-                <span className="text-xs font-medium text-crimson border border-crimson/30 rounded-full px-3 py-1">12 tygodni</span>
+            <Card className="relative p-6 bg-card border-border hover:border-crimson transition-smooth hover:shadow-crimson flex flex-col">
+              <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-[0.15em] text-crimson bg-crimson/10 border border-crimson/40 rounded-sm px-3 py-1 backdrop-blur-sm glow-crimson-soft">
+                12 tygodni
+              </span>
+              <div className="mb-5">
+                <p className="text-3xl font-zen text-crimson mb-2">剣道</p>
+                <h4 className="text-2xl font-zen font-medium text-soft-white">Kendo od podstaw</h4>
               </div>
 
               <p className="text-3xl font-zen text-soft-white mb-4">28.09.2026</p>
@@ -82,13 +82,13 @@ const Contact = () => {
               </Button>
             </Card>
 
-            <Card className="p-6 bg-card border-border hover:border-indigo transition-smooth hover:shadow-indigo flex flex-col">
-              <div className="flex items-start justify-between gap-4 mb-5">
-                <div>
-                  <p className="text-3xl font-zen text-indigo mb-2">杖道</p>
-                  <h4 className="text-2xl font-zen font-medium text-soft-white">Jodo od podstaw</h4>
-                </div>
-                <span className="text-xs font-medium text-indigo border border-indigo/30 rounded-full px-3 py-1">Nowa grupa</span>
+            <Card className="relative p-6 bg-card border-border hover:border-indigo transition-smooth hover:shadow-indigo flex flex-col">
+              <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-[0.15em] text-indigo bg-indigo/10 border border-indigo/40 rounded-sm px-3 py-1 backdrop-blur-sm glow-indigo-soft">
+                Nowa grupa
+              </span>
+              <div className="mb-5">
+                <p className="text-3xl font-zen text-indigo mb-2">杖道</p>
+                <h4 className="text-2xl font-zen font-medium text-soft-white">Jodo od podstaw</h4>
               </div>
 
               <p className="text-3xl font-zen text-soft-white mb-4">05.10.2026</p>
@@ -123,13 +123,13 @@ const Contact = () => {
               </Button>
             </Card>
 
-            <Card className="p-6 bg-card border-border hover:border-accent transition-smooth hover:shadow-elegant flex flex-col">
-              <div className="flex items-start justify-between gap-4 mb-5">
-                <div>
-                  <p className="text-3xl font-zen text-accent mb-2">居合道</p>
-                  <h4 className="text-2xl font-zen font-medium text-soft-white">Iaido od podstaw</h4>
-                </div>
-                <span className="text-xs font-medium text-accent border border-accent/30 rounded-full px-3 py-1">Nowa grupa</span>
+            <Card className="relative p-6 bg-card border-border hover:border-accent transition-smooth hover:shadow-elegant flex flex-col">
+              <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-[0.15em] text-accent bg-accent/10 border border-accent/40 rounded-sm px-3 py-1 backdrop-blur-sm glow-accent-soft">
+                Nowa grupa
+              </span>
+              <div className="mb-5">
+                <p className="text-3xl font-zen text-accent mb-2">居合道</p>
+                <h4 className="text-2xl font-zen font-medium text-soft-white">Iaido od podstaw</h4>
               </div>
 
               <p className="text-3xl font-zen text-soft-white mb-4">07.10.2026</p>
