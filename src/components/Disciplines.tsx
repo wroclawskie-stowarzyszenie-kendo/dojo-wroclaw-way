@@ -18,22 +18,22 @@ const Disciplines = () => {
       }
     },
     {
-      title: "Iaido", 
-      japanese: "居合道",
-      description: "Sztuka szybkiego dobycia miecza, precyzji ruchu i pełnej kontroli nad ciałem. Iaido to trening techniki, koncentracji i skutecznego działania.",
-      image: iaidoImage,
-      days: ["Środa"],
+      title: "Jodo",
+      japanese: "杖道", 
+      description: "Droga kija. Walka drewnianym kijem przeciwko partnerowi uzbrojonemu w miecz. Trening rozwija precyzję, dystans, wyczucie momentu i kontrolę ruchu.",
+      image: jodoImage,
+      days: ["Poniedziałek"],
       contact: {
         name: "Michał",
         phone: "+48 602 738 234"
       }
     },
     {
-      title: "Jodo",
-      japanese: "杖道", 
-      description: "Droga kija. Walka drewnianym kijem przeciwko partnerowi uzbrojonemu w miecz. Trening rozwija precyzję, dystans, wyczucie momentu i kontrolę ruchu.",
-      image: jodoImage,
-      days: ["Poniedziałek"],
+      title: "Iaido", 
+      japanese: "居合道",
+      description: "Sztuka szybkiego dobycia miecza, precyzji ruchu i pełnej kontroli nad ciałem. Iaido to trening techniki, koncentracji i skutecznego działania.",
+      image: iaidoImage,
+      days: ["Środa"],
       contact: {
         name: "Michał",
         phone: "+48 602 738 234"
