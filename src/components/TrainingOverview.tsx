@@ -6,7 +6,7 @@ const disciplines = [
     kanji: "剣道",
     name: "Kendo",
     color: "crimson",
-    text: "Japońska sztuka walki mieczem bambusowym (shinai) w pełnym pancerzu (bogu). Trening pod okiem sensei Wiesława Biela 6 dan kendo renshi, trenera reprezentacji Polski, z zespołem instruktorów. Wzmacnia ciało i umysł, buduje pewność siebie — niezależnie od wieku, płci i kondycji.",
+    text: "Japońska sztuka walki mieczem bambusowym (shinai) w pełnym pancerzu (bogu). Wzmacnia ciało i umysł, buduje pewność siebie — niezależnie od wieku, płci i kondycji.",
     styles: "Kendo, zawody i egzaminy na stopnie",
     days: ["Poniedziałek, 18:30–20:30", "Środa, 18:30–20:30"],
     card: "hover:border-crimson hover:shadow-crimson",
@@ -48,6 +48,7 @@ const TrainingOverview = () => (
           Sezon 2026/2027
         </div>
         <h3 className="text-3xl md:text-4xl font-zen font-medium text-soft-white">Wybierz swoją drogę</h3>
+        <p className="text-muted-foreground mt-3">Dni treningowe w Szkole Podstawowej nr 33, ul. Kolista 17, Wrocław</p>
       </div>
 
       <div className="grid lg:grid-cols-3 gap-6 items-stretch">
@@ -58,43 +59,20 @@ const TrainingOverview = () => (
               <h4 className="text-2xl font-zen font-medium text-soft-white">{d.name}</h4>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6">{d.text}</p>
-            <div className="space-y-3 border-t border-border pt-5 mt-auto text-sm">
+            <div className="mt-auto space-y-3">
               {d.days.map((day) => (
-                <div key={day} className="flex items-start gap-3">
-                  <Clock className={`w-5 h-5 mt-0.5 ${colorText[d.color]}`} />
-                  <span>{day}</span>
-                </div>
-              ))}
-              <div className="flex items-start gap-3">
-                <MapPin className={`w-5 h-5 mt-0.5 ${colorText[d.color]}`} />
-                <span>SP nr 33, ul. Kolista 17</span>
-              </div>
-              <p className="text-muted-foreground pt-1">{d.styles}</p>
-            </div>
-          </Card>
-        ))}
-      </div>
-    </div>
-
-    {/* Training days */}
-    <div className="space-y-8">
-      <div className="text-center space-y-2">
-        <h3 className="text-3xl font-zen font-medium text-soft-white">Dni Treningowe</h3>
-        <p className="text-muted-foreground">Szkoła Podstawowa nr 33, ul. Kolista 17, Wrocław</p>
-      </div>
-      <div className="grid md:grid-cols-2 gap-6">
-        {trainingDays.map((g) => (
-          <Card key={g.day} className="p-6 bg-gradient-subtle border-border">
-            <h4 className="text-xl font-zen font-medium text-soft-white mb-4">{g.day}</h4>
-            <div className="space-y-3">
-              {g.entries.map((e) => (
-                <div key={e.name} className="flex items-center justify-between gap-4 rounded-lg bg-card border border-border px-4 py-3">
-                  <span className={`font-zen font-medium text-lg ${colorText[e.color]}`}>{e.name}</span>
-                  <span className="flex items-center gap-2 text-muted-foreground">
-                    <Clock className="w-4 h-4" /> 18:30 – 20:30
+                <div key={day} className="flex items-center justify-between gap-4 rounded-lg bg-gradient-subtle border border-border px-4 py-3">
+                  <span className="font-medium text-soft-white">{day.split(",")[0]}</span>
+                  <span className="flex items-center gap-2 text-muted-foreground text-sm">
+                    <Clock className={`w-4 h-4 ${colorText[d.color]}`} /> 18:30 – 20:30
                   </span>
                 </div>
               ))}
+              <div className="flex items-center gap-2 pt-2 text-sm text-muted-foreground">
+                <MapPin className={`w-4 h-4 ${colorText[d.color]}`} />
+                <span>SP nr 33, ul. Kolista 17</span>
+              </div>
+              <p className="text-sm text-muted-foreground">{d.styles}</p>
             </div>
           </Card>
         ))}
