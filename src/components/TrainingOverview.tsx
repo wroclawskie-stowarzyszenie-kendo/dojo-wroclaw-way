@@ -38,9 +38,9 @@ const trainingDays = [
   { day: "Środa", entries: [{ name: "Kendo", color: "crimson" }, { name: "Iaido", color: "accent" }] },
 ];
 
-const TrainingOverview = () => (
+const TrainingOverview = ({ showCards = true }: { showCards?: boolean }) => (
   <div className="space-y-16">
-    {/* Disciplines */}
+    {showCards && (
     <div className="space-y-8">
       <div className="text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-crimson/10 text-crimson text-sm font-medium mb-4">
@@ -79,6 +79,7 @@ const TrainingOverview = () => (
       </div>
     </div>
 
+    )}
     {/* Calendar */}
     <div className="space-y-8">
       <div className="text-center space-y-4">

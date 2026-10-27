@@ -11,11 +11,12 @@ interface DisciplineCardProps {
     name: string;
     phone: string;
   };
+  days?: string[];
   delay?: number;
   slug?: string;
 }
 
-const DisciplineCard = ({ title, japanese, description, image, contact, delay = 0, slug }: DisciplineCardProps) => {
+const DisciplineCard = ({ title, japanese, description, image, contact, days = [], delay = 0, slug }: DisciplineCardProps) => {
   const getSlug = () => {
     if (slug) return slug;
     return title.toLowerCase();
@@ -40,6 +41,18 @@ const DisciplineCard = ({ title, japanese, description, image, contact, delay = 
             <p className="text-3xl font-zen font-light text-muted-foreground mb-4">{japanese}</p>
             <p className="text-foreground leading-relaxed">{description}</p>
           </div>
+
+          {days.length > 0 && (
+            <div className="mt-5 space-y-2">
+              {days.map((d) => (
+                <div key={d} className="flex items-center justify-between rounded-lg bg-gradient-subtle border border-border px-4 py-2 text-sm">
+                  <span className="font-medium text-soft-white">{d}</span>
+                  <span className="text-muted-foreground">18:30 – 20:30</span>
+                </div>
+              ))}
+              <p className="text-xs text-muted-foreground text-center pt-1">SP nr 33, ul. Kolista 17</p>
+            </div>
+          )}
 
           <div className="space-y-3 pt-4 border-t border-border mt-4">
             <div className="text-center">

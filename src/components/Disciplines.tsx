@@ -11,6 +11,7 @@ const Disciplines = () => {
       japanese: "剣道",
       description: "Droga miecza. Japońska sztuka walki wywodząca się z szermierki, wykorzystująca bambusowe miecze i zbroję.",
       image: kendoImage,
+      days: ["Poniedziałek", "Środa"],
       contact: {
         name: "Maciej",
         phone: "+48 500 132 644"
@@ -21,6 +22,7 @@ const Disciplines = () => {
       japanese: "居合道",
       description: "Sztuka szybkiego dobycia miecza, precyzji ruchu i pełnej kontroli nad ciałem. Iaido to trening techniki, koncentracji i skutecznego działania.",
       image: iaidoImage,
+      days: ["Środa"],
       contact: {
         name: "Michał",
         phone: "+48 602 738 234"
@@ -29,8 +31,9 @@ const Disciplines = () => {
     {
       title: "Jodo",
       japanese: "杖道", 
-      description: "Droga kija. Tradycyjna sztuka walki wykorzystująca drewniany kij do obrony przed atakami mieczem.",
+      description: "Droga kija. Walka drewnianym kijem przeciwko partnerowi uzbrojonemu w miecz. Trening rozwija precyzję, dystans, wyczucie momentu i kontrolę ruchu.",
       image: jodoImage,
+      days: ["Poniedziałek"],
       contact: {
         name: "Michał",
         phone: "+48 602 738 234"

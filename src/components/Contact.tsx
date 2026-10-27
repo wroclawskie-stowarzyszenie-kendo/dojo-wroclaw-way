@@ -29,7 +29,7 @@ const Contact = () => {
           </Button>
         </div>
 
-<TrainingOverview />
+<TrainingOverview showCards={false} />
 
         {/* Location */}
         <div className="bg-gradient-subtle rounded-2xl p-6 md:p-8 border border-border">
