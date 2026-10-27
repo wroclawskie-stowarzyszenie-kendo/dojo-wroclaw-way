@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
-import { Calendar, Clock, MapPin } from "lucide-react";
+import { Calendar, Clock } from "lucide-react";
+
+const DAY_SLOTS = ["Poniedziałek", "Środa"];
 
 const disciplines = [
   {
@@ -60,18 +62,23 @@ const TrainingOverview = ({ showCards = true }: { showCards?: boolean }) => (
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6">{d.text}</p>
             <div className="mt-auto space-y-3">
-              {d.days.map((day) => (
-                <div key={day} className="flex items-center justify-between gap-4 rounded-lg bg-gradient-subtle border border-border px-4 py-3">
-                  <span className="font-medium text-soft-white">{day.split(",")[0]}</span>
-                  <span className="flex items-center gap-2 text-muted-foreground text-sm">
-                    <Clock className={`w-4 h-4 ${colorText[d.color]}`} /> 18:30 – 20:30
-                  </span>
-                </div>
-              ))}
-              <div className="flex items-center gap-2 pt-2 text-sm text-muted-foreground">
-                <MapPin className={`w-4 h-4 ${colorText[d.color]}`} />
-                <span>SP nr 33, ul. Kolista 17</span>
-              </div>
+              {DAY_SLOTS.map((slot) =>
+                d.days.some((day) => day.startsWith(slot)) ? (
+                  <div key={slot} className="flex items-center justify-between gap-4 rounded-lg bg-gradient-subtle border border-border px-4 py-3">
+                    <span className="font-medium text-soft-white">{slot}</span>
+                    <span className="flex items-center gap-2 text-muted-foreground text-sm">
+                      <Clock className={`w-4 h-4 ${colorText[d.color]}`} /> 18:30 – 20:30
+                    </span>
+                  </div>
+                ) : (
+                  <div key={slot} aria-hidden className="invisible flex items-center justify-between gap-4 rounded-lg border border-border px-4 py-3">
+                    <span>{slot}</span>
+                    <span className="flex items-center gap-2 text-sm">
+                      <Clock className="w-4 h-4" /> 18:30 – 20:30
+                    </span>
+                  </div>
+                )
+              )}
               <p className="text-sm text-muted-foreground">{d.styles}</p>
             </div>
           </Card>
