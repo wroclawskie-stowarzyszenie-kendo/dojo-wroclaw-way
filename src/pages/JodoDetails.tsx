@@ -217,6 +217,7 @@ const JodoDetails = () => {
                   <h4 className="font-zen font-medium text-accent mb-2">Michał Szczepański</h4>
                   <p className="text-muted-foreground">Renshi 6 dan Iaido</p>
                   <p className="text-muted-foreground">Renshi 6 dan Jodo</p>
+                  <p className="text-sm text-muted-foreground mt-1">Trener Kadry Jodo PZK</p>
                   
                 </div>
                 
