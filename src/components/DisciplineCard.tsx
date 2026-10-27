@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
+const DAY_SLOTS = ["Poniedziałek", "Środa"];
+
 interface DisciplineCardProps {
   title: string;
   japanese: string;
@@ -44,13 +46,19 @@ const DisciplineCard = ({ title, japanese, description, image, contact, days = [
 
           {days.length > 0 && (
             <div className="mt-5 space-y-2">
-              {days.map((d) => (
-                <div key={d} className="flex items-center justify-between rounded-lg bg-gradient-subtle border border-border px-4 py-2 text-sm">
-                  <span className="font-medium text-soft-white">{d}</span>
-                  <span className="text-muted-foreground">18:30 – 20:30</span>
-                </div>
-              ))}
-              <p className="text-xs text-muted-foreground text-center pt-1">SP nr 33, ul. Kolista 17</p>
+              {DAY_SLOTS.map((slot) =>
+                days.includes(slot) ? (
+                  <div key={slot} className="flex items-center justify-between rounded-lg bg-gradient-subtle border border-border px-4 py-2 text-sm">
+                    <span className="font-medium text-soft-white">{slot}</span>
+                    <span className="text-muted-foreground">18:30 – 20:30</span>
+                  </div>
+                ) : (
+                  <div key={slot} aria-hidden className="invisible flex items-center justify-between rounded-lg border border-border px-4 py-2 text-sm">
+                    <span>{slot}</span>
+                    <span>18:30 – 20:30</span>
+                  </div>
+                )
+              )}
             </div>
           )}
 
