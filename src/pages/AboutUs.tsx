@@ -55,10 +55,6 @@ const AboutUs = () => {
                     <span className="text-muted-foreground">Wiesław Biel</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/50">
-                    <span className="font-medium">Wiceprezes Zarządu</span>
-                    <span className="text-muted-foreground">Olga Nowaczyk</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-border/50">
                     <span className="font-medium">Sekretarz</span>
                     <span className="text-muted-foreground">Maciej Szymański</span>
                   </div>
